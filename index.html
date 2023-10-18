@@ -16,7 +16,55 @@
 
     <!-- Main -->
     <main>
-        <section id="intro"></section>
+        <section id="intro">
+            <div>
+                <h2>Welcome to our knitting calculators</h2>
+                <p>Whether you're a seasoned knitting pro or just picking up your first
+                set of needles, we've got you covered. Our knitting calculator is
+                the perfect tool to help you create beautiful, custom-made knitted
+                creations with ease and precision.</p>
+                <button data-type="btn-learn-more">Learn more</button>
+            </div>
+            <div class="hidden" id="modal-learn-more">
+                <p>
+                    Knitting calculations are essential for creating well-fitting and properly proportioned knitwear, whether you're
+                    following a pattern or designing your own. Here are some of the most common knitting calculations and how they are used:
+                    </p>
+                    <p>
+                    <strong>Gauge:</strong> Gauge is the number of stitches and rows per inch or centimeter that you achieve when knitting with a particular
+                    yarn and needle size. To calculate gauge, you typically cast on a certain number of stitches, work for a set number of
+                    rows, and then measure the resulting fabric. Accurate gauge is crucial for ensuring that your finished project matches
+                    the intended size in a pattern.
+                    <p></p>
+                    <strong>Stitch Count:</strong> You might need to calculate the number of stitches to cast on for a project, which depends on your gauge
+                    and the desired measurements. To do this, multiply your desired width by your gauge in stitches per inch (or
+                    centimeter).
+                    </p>
+                    <p>
+                    <strong>Row Count:</strong> Similarly, you might need to calculate the number of rows to knit for a specific section of your project.
+                    This involves multiplying the desired length by your gauge in rows per inch (or centimeter).
+                    Increases and Decreases: When shaping a project, such as creating a waistline in a sweater, you need to calculate how to
+                    evenly distribute increases or decreases. For instance, if you're increasing stitches evenly across a row, divide the
+                    total number of stitches to be increased by the number of increases needed, and then space them accordingly.
+                    </p>
+                    <p>
+                    <strong>Yarn Length:</strong> To determine how much yarn you need for a project, you'll need to calculate the yardage required based on
+                    the yarn weight and the number of stitches and rows. Patterns usually provide information on how many yards are required
+                    for a specific size, but you can also calculate it based on your gauge and measurements.
+                    </p>
+                    <p>
+                    <strong>Yarn Substitution:</strong> If you want to use a different yarn than what's specified in a pattern, you'll need to calculate how
+                    it will affect your gauge and make necessary adjustments to ensure the finished project's size matches the pattern.
+                    </p>
+                </p>
+            </div>
+            <!-- Imperial or metric choice -->
+            <div>
+                <p>Do you want to use the imperial or metric system?</p>
+                <input type="checkbox" name="imperial" id="imperial">
+                <input type="checkbox" name="metric" id="metric">
+            </div>
+        </section>
 
         <section id="swatch"></section>
 
