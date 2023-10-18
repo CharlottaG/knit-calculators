@@ -16,6 +16,7 @@
 
     <!-- Main -->
     <main>
+        <!-- Intro -->
         <section id="intro">
             <div>
                 <h2>Welcome to our knitting calculators</h2>
@@ -25,63 +26,98 @@
                 creations with ease and precision.</p>
                 <button data-type="btn-learn-more">Learn more</button>
             </div>
-            <div class="hidden" id="modal-learn-more">
-                <p>
-                    Knitting calculations are essential for creating well-fitting and properly proportioned knitwear, whether you're
-                    following a pattern or designing your own. Here are some of the most common knitting calculations and how they are used:
-                    </p>
+            <div class="modal" id="modal-learn-more">
+                <div class="modal-content">
+                    <button class="btn" data-type="close-modal">x</button>
                     <p>
-                    <strong>Gauge:</strong> Gauge is the number of stitches and rows per inch or centimeter that you achieve when knitting with a particular
-                    yarn and needle size. To calculate gauge, you typically cast on a certain number of stitches, work for a set number of
-                    rows, and then measure the resulting fabric. Accurate gauge is crucial for ensuring that your finished project matches
-                    the intended size in a pattern.
-                    <p></p>
-                    <strong>Stitch Count:</strong> You might need to calculate the number of stitches to cast on for a project, which depends on your gauge
-                    and the desired measurements. To do this, multiply your desired width by your gauge in stitches per inch (or
-                    centimeter).
+                        Knitting calculations are essential for creating well-fitting and properly proportioned knitwear, whether you're
+                        following a pattern or designing your own. Here are some of the most common knitting calculations and how they are used:
+                        </p>
+                        <p>
+                        <strong>Gauge:</strong> Gauge is the number of stitches and rows per inch or centimeter that you achieve when knitting with a particular
+                        yarn and needle size. To calculate gauge, you typically cast on a certain number of stitches, work for a set number of
+                        rows, and then measure the resulting fabric. Accurate gauge is crucial for ensuring that your finished project matches
+                        the intended size in a pattern.
+                        <p></p>
+                        <strong>Stitch Count:</strong> You might need to calculate the number of stitches to cast on for a project, which depends on your gauge
+                        and the desired measurements. To do this, multiply your desired width by your gauge in stitches per inch (or
+                        centimeter).
+                        </p>
+                        <p>
+                        <strong>Row Count:</strong> Similarly, you might need to calculate the number of rows to knit for a specific section of your project.
+                        This involves multiplying the desired length by your gauge in rows per inch (or centimeter).
+                        Increases and Decreases: When shaping a project, such as creating a waistline in a sweater, you need to calculate how to
+                        evenly distribute increases or decreases. For instance, if you're increasing stitches evenly across a row, divide the
+                        total number of stitches to be increased by the number of increases needed, and then space them accordingly.
+                        </p>
+                        <p>
+                        <strong>Yarn Length:</strong> To determine how much yarn you need for a project, you'll need to calculate the yardage required based on
+                        the yarn weight and the number of stitches and rows. Patterns usually provide information on how many yards are required
+                        for a specific size, but you can also calculate it based on your gauge and measurements.
+                        </p>
+                        <p>
+                        <strong>Yarn Substitution:</strong> If you want to use a different yarn than what's specified in a pattern, you'll need to calculate how
+                        it will affect your gauge and make necessary adjustments to ensure the finished project's size matches the pattern.
+                        </p>
                     </p>
-                    <p>
-                    <strong>Row Count:</strong> Similarly, you might need to calculate the number of rows to knit for a specific section of your project.
-                    This involves multiplying the desired length by your gauge in rows per inch (or centimeter).
-                    Increases and Decreases: When shaping a project, such as creating a waistline in a sweater, you need to calculate how to
-                    evenly distribute increases or decreases. For instance, if you're increasing stitches evenly across a row, divide the
-                    total number of stitches to be increased by the number of increases needed, and then space them accordingly.
-                    </p>
-                    <p>
-                    <strong>Yarn Length:</strong> To determine how much yarn you need for a project, you'll need to calculate the yardage required based on
-                    the yarn weight and the number of stitches and rows. Patterns usually provide information on how many yards are required
-                    for a specific size, but you can also calculate it based on your gauge and measurements.
-                    </p>
-                    <p>
-                    <strong>Yarn Substitution:</strong> If you want to use a different yarn than what's specified in a pattern, you'll need to calculate how
-                    it will affect your gauge and make necessary adjustments to ensure the finished project's size matches the pattern.
-                    </p>
-                </p>
+                </div>
             </div>
             <!-- Imperial or metric choice -->
             <div>
-                <p><em>Do you want to use the imperial or metric system?</em></p>
+                <fieldset id="measurement">
+                <legend>Do you want to use the imperial or metric system?<legend>
+                <input type="checkbox" name="measurement" id="imperial" value="inches">
                 <label for="imperial">Inches</label>
-                <input type="checkbox" name="imperial" id="imperial">
-                <label for="metrich">Centimeters</label>
-                <input type="checkbox" name="metric" id="metric">
+                <input type="checkbox" name="measurement" id="metric" value="centimeters">
+                <label for="metric">Centimeters</label>
+                </fieldset>
+            </div>
+            <div>
+                <p>What type of calculation should we do?</p>
+                <button data-type="btn-gauge">Open gauge calculation</button>
+                <button data-type="btn-cast-on">Open cast-on calculation</button>
+                <button data-type="btn-yarn">Open yarn calculation</button>
+                <button data-type="btn-increase-decrease">Open increase or decrease calculation</button>
+            </div>
+        </section>
+        <!-- Calculate your gauge -->
+        <section id="gauge" class="black-bkgr">
+            <h2>Calculate your gauge</h2>
+            <p>Knitting a swatch to calculate your gauge is an important step when working on a knitting project, especially if you
+            want your finished piece to have the correct size and fit. Use the same yarn and size of knitting needles you plan to
+            use for your project. Begin by casting on a certain number of stitches. Typically, this is around 20-30 stitches.
+            </p>
+            <p>
+            After knitting several rows, you'll want to measure your swatch. Lay it flat and use a measuring tape or ruler to
+            measure the number of stitches across (horizontally) and the number of rows (vertically) within a 4-inch (10 cm) square.
+            To calculate your gauge, you'll need to count how many stitches you have per 4 inches horizontally and how many rows per
+            4 inches vertically. For example, if you have 20 stitches and 28 rows in 4 inches, your gauge would be 20 stitches and
+            28 rows per 4 inches.
+            </p>
+            <p>
+            If your gauge does not match the gauge specified in the pattern, you may need to adjust your needle size. If your swatch
+            has more stitches per 4 inches than the pattern specifies, try larger needles. If it has fewer stitches, try smaller
+            needles. Knit another swatch with the adjusted needles and measure again until you achieve the correct gauge.
+            </p>
+            <p>Number of <em>stitches</em> within 10x10 cm (4x4 inches): <input id="swatch-stitches" type="number"></p>
+            <p>Number of <em>rows</em> within 10x10 cm (4x4 inches): <input id="swatch-rows" type="number"></p>
+            <button data-type="btn-calc-gauge">Calculate my gauge</button>
+            <div class="results">
+                <p id="stitches-per-cm">Stitches/cm (inch) <span> 0 </span></p>
+                <p id="rows-per-cm">Rows/cm (inch) <span> 0 </span></p>
             </div>
         </section>
 
-        <section id="swatch">
-            <button data-type="btn-swatch">Swatch</button>
+        <section id="cast-on" class="hidden black-bkgr">
+            <button data-type="btn-calc-cast-on">Cast-on</button>
         </section>
 
-        <section id="cast-on">
-            <button data-type="btn-cast-on">Cast-on</button>
+        <section id="yarn" class="hidden black-bkgr ">
+            <button data-type="btn-clac-yarn">Yarn</button>
         </section>
 
-        <section id="yarn">
-            <button data-type="btn-yarn">Yarn</button>
-        </section>
-
-        <section id="increase-decrease">
-            <button data-type="btn-increase-decrease">Increase/Decrease</button>
+        <section id="increase-decrease" class="hidden black-bkgr ">
+            <button data-type="btn-calc-increase-decrease">Increase/Decrease</button>
         </section>
 
     </main>
