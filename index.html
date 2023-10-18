@@ -101,8 +101,8 @@
             has more stitches per 4 inches than the pattern specifies, try larger needles. If it has fewer stitches, try smaller
             needles. Knit another swatch with the adjusted needles and measure again until you achieve the correct gauge.
             </p>
-            <p>Number of <em>stitches</em> within 10x10 cm (4x4 inches): <input id="swatch-stitches" type="number" oninput="stitchesPerCm()"></p>
-            <p>Number of <em>rows</em> within 10x10 cm (4x4 inches): <input id="swatch-rows" type="number" oninput="rowsPerCm()"></p>
+            <p>Number of <em>stitches</em> within 10x10 cm (4x4 inches): <input id="swatch-stitches" type="number"></p>
+            <p>Number of <em>rows</em> within 10x10 cm (4x4 inches): <input id="swatch-rows" type="number"></p>
             <button id="btn-calc-gauge" class="btn">Calculate my gauge</button>
             <div class="results">
                 <p>Stitches/cm (inch): <span id="stitches-per-cm"> 0 </span></p>
@@ -110,15 +110,36 @@
             </div>
         </section>
 
-        <section id="cast-on" class="hidden black-bkgr">
-            <button data-type="btn-calc-cast-on">Cast-on</button>
+        <section id="modal-cast-on" class="modal black-bkgr">
+            <div>
+                <h2>Calculate how many stitches to cast-on</h2><span id="close-modal"> x</span>
+                </div>
+                <p>To calculate how many stitches to cast on for a knitting project, you'll need to consider your gauge and the desired
+                width of your project. Here's a step-by-step guide to help you determine the number of stitches to cast on:
+                Round to the Nearest Whole Number: If your calculation doesn't result in a whole number, round to the nearest whole
+                number. In knitting, you can't cast on a fraction of a stitch, so round up or down to the nearest whole stitch as
+                needed.
+                </p>
+                <p>
+                Remember that achieving the correct gauge is crucial for your project to turn out as expected. If your gauge swatch
+                doesn't match the gauge specified in your pattern, you may need to adjust your needle size and knit another swatch until
+                you achieve the correct gauge. Always knit a gauge swatch before starting a new project to ensure your finished item
+                will be the right size.
+                </p>
+                <p>Enter desired width:: <input id="desired-width" type="number"></p>
+                <p>Enter desired length:: <input id="desired-length" type="number"></p>
+                <button id="btn-calc-cast-on">Calculate my cast-on</button>
+            <div class="results">
+                <p>Stitches to cast-on: <span id="stitches-to-cast-on"> 0 </span></p>
+                <p>Rows to knit: <span id="rows-to-knit"> 0 </span></p>
+            </div>
         </section>
 
-        <section id="yarn" class="hidden black-bkgr ">
+        <section id="modal-yarn" class="modal black-bkgr ">
             <button data-type="btn-clac-yarn">Yarn</button>
         </section>
 
-        <section id="increase-decrease" class="hidden black-bkgr ">
+        <section id="modal-increase-decrease" class="modal black-bkgr ">
             <button data-type="btn-calc-increase-decrease">Increase/Decrease</button>
         </section>
 
