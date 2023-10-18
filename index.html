@@ -24,7 +24,7 @@
                 set of needles, we've got you covered. Our knitting calculator is
                 the perfect tool to help you create beautiful, custom-made knitted
                 creations with ease and precision.</p>
-                <button data-type="btn-learn-more">Learn more</button>
+                <button data-type="learn-more">Learn more</button>
             </div>
             <div class="modal" id="modal-learn-more">
                 <div class="modal-content">
@@ -74,15 +74,17 @@
             </div>
             <div>
                 <p>What type of calculation should we do?</p>
-                <button data-type="btn-gauge">Open gauge calculation</button>
-                <button data-type="btn-cast-on">Open cast-on calculation</button>
-                <button data-type="btn-yarn">Open yarn calculation</button>
-                <button data-type="btn-increase-decrease">Open increase or decrease calculation</button>
+                <button data-type="gauge">Open gauge calculation</button>
+                <button data-type="cast-on">Open cast-on calculation</button>
+                <button data-type="yarn">Open yarn calculation</button>
+                <button data-type="increase-decrease">Open increase or decrease calculation</button>
             </div>
         </section>
         <!-- Calculate your gauge -->
-        <section id="gauge" class="black-bkgr">
-            <h2>Calculate your gauge</h2>
+        <section id="modal-gauge" class="modal black-bkgr">
+            <div>
+            <h2>Calculate your gauge</h2><span id="close-modal"> x</span>
+            </div>
             <p>Knitting a swatch to calculate your gauge is an important step when working on a knitting project, especially if you
             want your finished piece to have the correct size and fit. Use the same yarn and size of knitting needles you plan to
             use for your project. Begin by casting on a certain number of stitches. Typically, this is around 20-30 stitches.
@@ -99,12 +101,12 @@
             has more stitches per 4 inches than the pattern specifies, try larger needles. If it has fewer stitches, try smaller
             needles. Knit another swatch with the adjusted needles and measure again until you achieve the correct gauge.
             </p>
-            <p>Number of <em>stitches</em> within 10x10 cm (4x4 inches): <input id="swatch-stitches" type="number"></p>
-            <p>Number of <em>rows</em> within 10x10 cm (4x4 inches): <input id="swatch-rows" type="number"></p>
-            <button data-type="btn-calc-gauge">Calculate my gauge</button>
+            <p>Number of <em>stitches</em> within 10x10 cm (4x4 inches): <input id="swatch-stitches" type="number" oninput="stitchesPerCm()"></p>
+            <p>Number of <em>rows</em> within 10x10 cm (4x4 inches): <input id="swatch-rows" type="number" oninput="rowsPerCm()"></p>
+            <button id="btn-calc-gauge" class="btn">Calculate my gauge</button>
             <div class="results">
-                <p id="stitches-per-cm">Stitches/cm (inch) <span> 0 </span></p>
-                <p id="rows-per-cm">Rows/cm (inch) <span> 0 </span></p>
+                <p>Stitches/cm (inch): <span id="stitches-per-cm"> 0 </span></p>
+                <p>Rows/cm (inch): <span id="rows-per-cm"> 0 </span></p>
             </div>
         </section>
 
