@@ -7,9 +7,20 @@ document.addEventListener('DOMContentLoaded', function () {
             if (this.getAttribute('data-type') === 'learn-more') {
                 modalLearnMore.style.display = 'block';
             } else {
-                let calcOption = this.getAttribute("data-type");
-                alert(`You clicked ${calcOption}`);
-            }
+                switch (button) {
+                    case 'gauge':
+                        modalGauge.style.display = 'block';
+                        break;
+                    case 'cast-on':
+                        modalCastOn.style.display = 'block';
+                        break;
+                    case 'yarn':
+                        modalYarn.style.display = 'block';
+                        break;
+                    case 'increase-decrease':
+                        modalIncreseDecrease.style.display = 'block';
+                        break;
+                };
         });
     }
 });

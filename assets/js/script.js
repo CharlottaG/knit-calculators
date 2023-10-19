@@ -9,46 +9,30 @@ document.addEventListener('DOMContentLoaded', function () {
                 modalGauge.style.display = 'block';
             } else {
                 var calcOption = this.getAttribute("data-type");
-                alert(`You clicked ${calcOption}`);
+                switch (calcOption) {
+                    case 'gauge':
+                        modalGauge.style.display = 'block';
+                        break;
+                    case 'cast-on':
+                        modalCastOn.style.display = 'block';
+                        break;
+                    case 'yarn':
+                        modalYarn.style.display = 'block';
+                        break;
+                    case 'increase-decrease':
+                        modalIncreseDecrease.style.display = 'block';
+                        break;
+                }
             }
         });
     }
 });
-
-//switch function for buttons in for loop
-/*switch (button) {
-    case 'gauge':
-        modalGauge.style.display = 'block';
-        break;
-    case 'cast-on':
-        modalCastOn.style.display = 'block';
-        break;
-    case 'yarn':
-        modalYarn.style.display = 'block';
-        break;
-    case 'increase-decrease':
-        modalIncreseDecrease.style.display = 'block';
-        break;
-};*/
 
 //Modals
 const modalGauge = document.getElementById('modal-gauge');
 const modalCastOn = document.getElementById('modal-cast-on');
 const modalYarn = document.getElementById('modal-yarn');
 const modalIncreseDecrease = document.getElementById('modal-increase-decrease');
-
-/*//Open modal
-function openModal() {
-    document.getElementsByClassName('modal').style.display = 'block';
-};
-
-//Close modal
-var btnCloseModal = document.getElementsByClassName('close-modal');
-btnCloseModal.addEventListener('click', closeModal());
-
-function closeModal() {
-    document.getElementsByClassName('modal').style.display = 'none';
-};*/
 
 //Swatch calculation for gauge
 var btnCalcGauge = document.getElementById('btn-calc-gauge');
@@ -137,7 +121,18 @@ function divide(num1, num2) {
 }
 
 
+//Open modal
+function openModal() {
+    document.getElementsByClassName('modal').style.display = 'block';
+};
 
+//Close modal
+var btnCloseModal = document.getElementsByClassName('close-modal');
+btnCloseModal.addEventListener('click', closeModal());
+
+function closeModal() {
+    document.getElementsByClassName('modal').style.display = 'none';
+};
 
 
 
