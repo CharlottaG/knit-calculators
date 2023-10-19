@@ -24,11 +24,12 @@
                 set of needles, we've got you covered. Our knitting calculator is
                 the perfect tool to help you create beautiful, custom-made knitted
                 creations with ease and precision.</p>
-                <button data-type="learn-more">Learn more</button>
+                <button class="modal-button"data-type="learn-more">Learn more</button>
             </div>
             <div class="modal" id="modal-learn-more">
                 <div class="modal-content">
-                    <button class="btn" data-type="close-modal">x</button>
+                    <h2>Calculating in knitting</h2>
+                    <button class="btn" id="close-modal">x</button>
                     <p>
                         Knitting calculations are essential for creating well-fitting and properly proportioned knitwear, whether you're
                         following a pattern or designing your own. Here are some of the most common knitting calculations and how they are used:
@@ -74,14 +75,14 @@
             </div>
             <div>
                 <p>What type of calculation should we do?</p>
-                <button data-type="gauge">Open gauge calculation</button>
-                <button data-type="cast-on">Open cast-on calculation</button>
-                <button data-type="yarn">Open yarn calculation</button>
-                <button data-type="increase-decrease">Open increase or decrease calculation</button>
+                <button class="modal-button" data-type="gauge">Open gauge calculation</button>
+                <button class="modal-button" data-type="cast-on">Open cast-on calculation</button>
+                <button class="modal-button" data-type="yarn">Open yarn calculation</button>
+                <button class="modal-button" data-type="increase-decrease">Open increase or decrease calculation</button>
             </div>
         </section>
         <!-- Calculate your gauge -->
-        <section id="modal-gauge" class="modal black-bkgr">
+        <section id="modal-gauge" class=" modal black-bkgr">
             <div>
             <h2>Calculate your gauge</h2><span id="close-modal"> x</span>
             </div>
@@ -101,16 +102,16 @@
             has more stitches per 4 inches than the pattern specifies, try larger needles. If it has fewer stitches, try smaller
             needles. Knit another swatch with the adjusted needles and measure again until you achieve the correct gauge.
             </p>
-            <p>Number of <em>stitches</em> within 10x10 cm (4x4 inches): <input id="swatch-stitches" type="number"></p>
-            <p>Number of <em>rows</em> within 10x10 cm (4x4 inches): <input id="swatch-rows" type="number"></p>
+            <p>Number of <em>stitches</em> within 10x10 cm (4x4 inches): <input id="user-swatch-stitches" type="number" oninput="stitchesPerCm()"></p>
+            <p>Number of <em>rows</em> within 10x10 cm (4x4 inches): <input id="user-swatch-rows" type="number" oninput="rowsPerCm()"></p>
             <button id="btn-calc-gauge" class="btn">Calculate my gauge</button>
             <div class="results">
-                <p>Stitches/cm (inch): <span id="stitches-per-cm"> 0 </span></p>
-                <p>Rows/cm (inch): <span id="rows-per-cm"> 0 </span></p>
+                <p>Stitches/cm (inch): <span id="user-stitches-per-cm"> 0 </span></p>
+                <p>Rows/cm (inch): <span id="user-rows-per-cm"> 0 </span></p>
             </div>
         </section>
 
-        <section id="modal-cast-on" class="modal black-bkgr">
+        <section id="modal-cast-on" class=" black-bkgr">
             <div>
                 <h2>Calculate how many stitches to cast-on</h2><span id="close-modal"> x</span>
                 </div>
@@ -126,8 +127,8 @@
                 you achieve the correct gauge. Always knit a gauge swatch before starting a new project to ensure your finished item
                 will be the right size.
                 </p>
-                <p>Enter desired width:: <input id="desired-width" type="number"></p>
-                <p>Enter desired length:: <input id="desired-length" type="number"></p>
+                <p>Enter desired width: <input id="desired-width" type="number" oninput="stitchesToCastOn()"></p>
+                <p>Enter desired length: <input id="desired-length" type="number" oninput="rowsToKnit()"></p>
                 <button id="btn-calc-cast-on">Calculate my cast-on</button>
             <div class="results">
                 <p>Stitches to cast-on: <span id="stitches-to-cast-on"> 0 </span></p>
@@ -136,11 +137,11 @@
         </section>
 
         <section id="modal-yarn" class="modal black-bkgr ">
-            <button data-type="btn-clac-yarn">Yarn</button>
+            <button id="btn-clac-yarn">Yarn</button>
         </section>
 
         <section id="modal-increase-decrease" class="modal black-bkgr ">
-            <button data-type="btn-calc-increase-decrease">Increase/Decrease</button>
+            <button id="btn-calc-increase-decrease">Increase/Decrease</button>
         </section>
 
     </main>
