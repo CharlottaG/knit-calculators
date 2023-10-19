@@ -35,16 +35,18 @@
         <section id="user-input" class="input-box">
             <!-- Swatch-->
             <div class="calc-section">
-                <p>Number of <em>stitches</em> within 10x10 cm (4x4 inches): <input id="user-swatch-stitches" type="number"></p>
-                <p>Number of <em>rows</em> within 10x10 cm (4x4 inches): <input id="user-swatch-rows" type="number"></p>
+                <p>Number of <em>stitches</em> within 10x10 cm (4x4 inches): <input type="number" id="user-swatch-stitches" ></p>
+                <p>Number of <em>rows</em> within 10x10 cm (4x4 inches): <input type="number" id="user-swatch-rows"></p>
                 <button id="btn-calc-gauge" class="btn">Calculate my gauge</button>
                 <p>Stitches/cm (inch): <span id="user-stitches-per-cm" class="result"> 0 </span></p>
                 <p>Rows/cm (inch): <span id="user-rows-per-cm" class="result"> 0 </span></p>
             </div>
             <!-- Cast-on-->
             <div class="calc-section">
-                <p>Enter desired width: <input id="desired-width" type="number"></p>
-                <p>Enter desired length: <input id="desired-length" type="number"></p>
+                <p>Enter desired width: <input type="number" id="desired-width"></p>
+                <p>Enter desired length: <input type="number" id="desired-length"></p>
+                <em>You need to fill in the swatch fields above in order for the calculation to work!</em>
+                <br>
                 <button id="btn-calc-cast-on">Calculate my cast-on</button>
                 <p>Stitches to cast-on: <span id="stitches-to-cast-on" class="result"> 0 </span></p>
                 <p>Rows to knit: <span id="rows-to-knit" class="result"> 0 </span></p>
@@ -52,7 +54,9 @@
             <!-- Yarn-->
             <div class="calc-section">
                 <p>Yarn length/skein: <input type="number" id="skein-length"></p>
-                <button id="btn-clac-yarn">Yarn</button>
+                <em>You need to fill in the desired width and length fields above in order for the calculation to work!</em>
+                <br>
+                <button id="btn-calc-yarn">Calculate skeins</button>
                 <p>The required yarn length for your project is: <span id="project-yarn-length" class="result"> 0 </span></p>
                 <p>Which is equal to <span id="number-of-skeins" class="result"> 0 </span> number of skeins in selected yarn type.</p>
             </div>
@@ -60,8 +64,8 @@
             <div class="calc-section">
                 <p>Your current number of stitches: <input type="number" id="current-stitch-count"></p>
                 <p>Number of stitches to increase/decrease: <input type="number" id="stitches-to-increase-decrease"></p>
-                <button id="btn-calc-increase-decrease">Increase/Decrease</button>
-                <p>Evenly increase/decrease: <span id="evenly-increase-decrease"class="result"> 0 </span></p>
+                <button id="btn-calc-increase-decrease">Calculate increase/decrease</button>
+                <p>Increase/decrease every <span id="evenly-increase-decrease"class="result"> 0 </span> stitches.</p>
             </div>
         </section>
         <!-- Modals -->

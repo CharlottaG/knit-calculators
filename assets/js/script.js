@@ -32,7 +32,7 @@ function closeModal() {
     modal.style.display = 'none';
 };
 
-//Swatch calculation for gauge - OK
+//Swatch calculation for gauge - WORKS
 let btnCalcGauge = document.getElementById('btn-calc-gauge');
 btnCalcGauge.addEventListener('click', () => {
 
@@ -92,7 +92,7 @@ function calcNumberOfSkeins(totalStitches, skeinLength) {
     document.getElementById('number-of-skeins').innerHTML = divide(totalStitches, skeinLength);
 };
 
-//Calculate how to increase or decrease - not working, not writing back
+//Calculate how to increase or decrease - WORKS
 let btnCalcIncreseDecrease = document.getElementById('btn-calc-increase-decrease');
 btnCalcIncreseDecrease.addEventListener('click', () => {
     
