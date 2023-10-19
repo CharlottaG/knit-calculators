@@ -35,6 +35,7 @@
         <section id="user-input" class="input-box">
             <!-- Swatch-->
             <div class="calc-section">
+                <h3>Stitches/rows per cm</h3>
                 <p>Number of <em>stitches</em> within 10x10 cm (4x4 inches): <input type="number" id="user-swatch-stitches" ></p>
                 <p>Number of <em>rows</em> within 10x10 cm (4x4 inches): <input type="number" id="user-swatch-rows"></p>
                 <button id="btn-calc-gauge" class="btn">Calculate my gauge</button>
@@ -43,6 +44,7 @@
             </div>
             <!-- Cast-on-->
             <div class="calc-section">
+                <h3>Number of stitches to cast-on</h3>
                 <p>Enter desired width: <input type="number" id="desired-width"></p>
                 <p>Enter desired length: <input type="number" id="desired-length"></p>
                 <em>You need to fill in the swatch fields above in order for the calculation to work!</em>
@@ -53,6 +55,7 @@
             </div>
             <!-- Yarn-->
             <div class="calc-section">
+                <h3>How many skeins you need</h3>
                 <p>Yarn length/skein: <input type="number" id="skein-length"></p>
                 <em>You need to fill in the desired width and length fields above in order for the calculation to work!</em>
                 <br>
@@ -62,90 +65,41 @@
             </div>
             <!-- Increase/Decrease-->
             <div class="calc-section">
+                <h3>How to evenly increase or decrease</h3>
                 <p>Your current number of stitches: <input type="number" id="current-stitch-count"></p>
                 <p>Number of stitches to increase/decrease: <input type="number" id="stitches-to-increase-decrease"></p>
                 <button id="btn-calc-increase-decrease">Calculate increase/decrease</button>
-                <p>Increase/decrease every <span id="evenly-increase-decrease"class="result"> 0 </span> stitches.</p>
+                <p>Increase/decrease every<span id="evenly-increase-decrease" class="result"> 0 </span> stitches.</p>
             </div>
         </section>
         <!-- Modals -->
-        <section id="modal-learn-more" class="modal black-bkgr>
-            <div class="modal-content">
-                <h2>Calculating in knitting</h2>
-                <button class="btn" id="close-modal">x</button>
-                <p>
-                    Knitting calculations are essential for creating well-fitting and properly proportioned knitwear, whether
-                    you're
-                    following a pattern or designing your own. Here are some of the most common knitting calculations and how
-                    they are used:
+        <section id="modal-gauge" class="modal black-bkgr">
+            <div>
+                <h3>Calculate your gauge</h3><span class="close-modal btn">x</span>
+            </div>
+            <div>
+                <p>Knitting a swatch to calculate your gauge is an important step when working on a knitting project, especially if you
+                want your finished piece to have the correct size and fit. Use the same yarn and size of knitting needles you plan to
+                use for your project. Begin by casting on a certain number of stitches. Typically, this is around 20-30 stitches.
                 </p>
                 <p>
-                    <strong>Gauge:</strong> Gauge is the number of stitches and rows per inch or centimeter that you achieve
-                    when knitting with a particular
-                    yarn and needle size. To calculate gauge, you typically cast on a certain number of stitches, work for a set
-                    number of
-                    rows, and then measure the resulting fabric. Accurate gauge is crucial for ensuring that your finished
-                    project matches
-                    the intended size in a pattern.
-                <p></p>
-                <strong>Stitch Count:</strong> You might need to calculate the number of stitches to cast on for a project,
-                which depends on your gauge
-                and the desired measurements. To do this, multiply your desired width by your gauge in stitches per inch (or
-                centimeter).
+                After knitting several rows, you'll want to measure your swatch. Lay it flat and use a measuring tape or ruler to
+                measure the number of stitches across (horizontally) and the number of rows (vertically) within a 4-inch (10 cm) square.
+                To calculate your gauge, you'll need to count how many stitches you have per 4 inches horizontally and how many rows per
+                4 inches vertically. For example, if you have 20 stitches and 28 rows in 4 inches, your gauge would be 20 stitches and
+                28 rows per 4 inches.
                 </p>
                 <p>
-                    <strong>Row Count:</strong> Similarly, you might need to calculate the number of rows to knit for a specific
-                    section of your project.
-                    This involves multiplying the desired length by your gauge in rows per inch (or centimeter).
-                    Increases and Decreases: When shaping a project, such as creating a waistline in a sweater, you need to
-                    calculate how to
-                    evenly distribute increases or decreases. For instance, if you're increasing stitches evenly across a row,
-                    divide the
-                    total number of stitches to be increased by the number of increases needed, and then space them accordingly.
-                </p>
-                <p>
-                    <strong>Yarn Length:</strong> To determine how much yarn you need for a project, you'll need to calculate
-                    the yardage required based on
-                    the yarn weight and the number of stitches and rows. Patterns usually provide information on how many yards
-                    are required
-                    for a specific size, but you can also calculate it based on your gauge and measurements.
-                </p>
-                <p>
-                    <strong>Yarn Substitution:</strong> If you want to use a different yarn than what's specified in a pattern,
-                    you'll need to calculate how
-                    it will affect your gauge and make necessary adjustments to ensure the finished project's size matches the
-                    pattern.
-                </p>
+                If your gauge does not match the gauge specified in the pattern, you may need to adjust your needle size. If your swatch
+                has more stitches per 4 inches than the pattern specifies, try larger needles. If it has fewer stitches, try smaller
+                needles. Knit another swatch with the adjusted needles and measure again until you achieve the correct gauge.
                 </p>
             </div>
         </section>
 
-        <section id="modal-gauge" class=" modal black-bkgr">
+        <section id="modal-cast-on" class="modal black-bkgr">
             <div>
-            <h2>Calculate your gauge</h2> <button class="btn" id="close-modal">x</button>
-            </div>
-            <p>Knitting a swatch to calculate your gauge is an important step when working on a knitting project, especially if you
-            want your finished piece to have the correct size and fit. Use the same yarn and size of knitting needles you plan to
-            use for your project. Begin by casting on a certain number of stitches. Typically, this is around 20-30 stitches.
-            </p>
-            <p>
-            After knitting several rows, you'll want to measure your swatch. Lay it flat and use a measuring tape or ruler to
-            measure the number of stitches across (horizontally) and the number of rows (vertically) within a 4-inch (10 cm) square.
-            To calculate your gauge, you'll need to count how many stitches you have per 4 inches horizontally and how many rows per
-            4 inches vertically. For example, if you have 20 stitches and 28 rows in 4 inches, your gauge would be 20 stitches and
-            28 rows per 4 inches.
-            </p>
-            <p>
-            If your gauge does not match the gauge specified in the pattern, you may need to adjust your needle size. If your swatch
-            has more stitches per 4 inches than the pattern specifies, try larger needles. If it has fewer stitches, try smaller
-            needles. Knit another swatch with the adjusted needles and measure again until you achieve the correct gauge.
-            </p>
-            </div>
-        </section>
-
-        <section id="modal-cast-on" class=" modal black-bkgr">
-            <div>
-                <h2>Calculate how many stitches to cast-on</h2><button class="btn" id="close-modal">x</button>
+                <h3>Calculate how many stitches to cast-on</h3><span class="close-modal btn">x</span>
                 </div>
                 <p>To calculate how many stitches to cast on for a knitting project, you'll need to consider your gauge and the desired
                 width of your project. Here's a step-by-step guide to help you determine the number of stitches to cast on:
@@ -162,18 +116,17 @@
             </div>
         </section>
 
-        <section id="modal-yarn" class=" modal black-bkgr ">
+        <section id="modal-yarn" class="modal black-bkgr ">
             <div>
-                <h2>Calculate the amount of yarn needed</h2><button class="btn" id="close-modal">x</button>
+                <h3>Calculate the amount of yarn needed</h3><span class="close-modal btn">x</span>
                 <p>To calculate how much yarn you'll need for a knitting project, you'll need to consider several factors, including the
                 type of yarn, your gauge, the size of the project, and any specific pattern instructions.</p>
-                </div>
             </div>
         </section>
 
-        <section id="modal-increase-decrease" class=" modal black-bkgr ">
+        <section id="modal-increase-decrease" class="modal black-bkgr ">
             <div>
-                <h2>Calculate increases and decreases</h2><button class="btn" id="close-modal">x</button>
+                <h3>Calculate increases and decreases</h3><span class="close-modal btn">x</span>
                 <p>Some text</p>
             </div>
         </section>
@@ -184,20 +137,20 @@
     <footer>
         <ul id="social-media">
             <li>
-                <a href="www.instagram.com"><i class="fa-brands fa-instagram" target="-blank" rel="noopener"
-                        aria-label="Follow me on Instagram (opens in new tab)"></i></a>
+                <a href="www.instagram.com" target="_blank" rel="noopener"
+                        aria-label="Follow me on Instagram (opens in new tab)"><i class="fa-brands fa-instagram"></i></a>
             </li>
             <li>
-                <a href="www.ravelry.com"><i class="fa-brands fa-ravelry" target="-blank" rel="noopener"
-                        aria-label="Follow me on Ravelry (opens in new tab)"></i></a>
+                <a href="www.ravelry.com" target="_blank" rel="noopener"
+                        aria-label="Follow me on Ravelry (opens in new tab)"><i class="fa-brands fa-ravelry"></i></a>
             </li>
             <li>
-                <a href="www.pinterest.com"><i class="fa-brands fa-pinterest" target="-blank" rel="noopener"
-                        aria-label="Follow me on Pinterest (opens in new tab)"></i></a>
+                <a href="www.pinterest.com" target="_blank" rel="noopener"
+                        aria-label="Follow me on Pinterest (opens in new tab)"><i class="fa-brands fa-pinterest"></i></a>
             </li>
             <li>
-                <a href="mailto: charlotta@grundmann.se"><i class="fa-solid fa-at" target="-blank" rel="noopener"
-                        aria-label="Send me an email (opens in new tab)"></i></a>
+                <a href="mailto: charlotta@grundmann.se" target="_blank" rel="noopener"
+                        aria-label="Send me an email (opens in new tab)"><i class="fa-solid fa-at"></i></a>
             </li>
         </ul>
         <p id="copyright">© - Charlotta Grundmann - 2023</p>
