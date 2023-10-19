@@ -90,12 +90,9 @@ div {
     margin: 10px 0px 5px 0px;
 }
 
-#imperial, #metric {
-    border: none;
-    border-radius: 5px;
-    margin: 10px;
-    width: 22px;
-    height: 22px;
+.input-box {
+    border: 1px solid orange;
+    padding: 10px;
 }
 
 .modal {
