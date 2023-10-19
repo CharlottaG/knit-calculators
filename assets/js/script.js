@@ -120,20 +120,6 @@ function divide(num1, num2) {
     return Math.round(num1) / num2;
 }
 
-
-//Open modal
-function openModal() {
-    document.getElementsByClassName('modal').style.display = 'block';
-};
-
-//Close modal
-var btnCloseModal = document.getElementsByClassName('close-modal');
-btnCloseModal.addEventListener('click', closeModal());
-
-function closeModal() {
-    document.getElementsByClassName('modal').style.display = 'none';
-};
-
-
-
-
+function closeModalGauge() {
+    modalGauge.style.display = 'none';
+}
