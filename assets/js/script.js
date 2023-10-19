@@ -52,7 +52,6 @@ function rowsPerCm(userSwatchRows, num1) {
     document.getElementById('user-rows-per-cm').innerHTML = divide(userSwatchRows, num1);
 };
 
-
 //Calculate cast-on stitches - Returns NaN
 let btnCalcCastOn = document.getElementById('btn-calc-cast-on');
 btnCalcCastOn.addEventListener('click', () => {
@@ -74,34 +73,41 @@ function calcRowsToKnit(desiredLength, numberOfRowsPerCm) {
 
 //Calculate total number of skeins needed - returns NaN
 let btnCalcYarn = document.getElementById('btn-calc-yarn');
-btnCalcYarn.addEventListener('click', calcNumberOfSkeins);
+btnCalcYarn.addEventListener('click', () => {
+    let stitchesToCastOn = document.getElementById('rows-to-knit').value;
+    let rowsToKnit = document.getElementById('stitches-to-cast-on').value;
+    let totalStitches = document.getElementById('project-yarn-length').value;
+    let skeinLength = document.getElementById('skein-length').value;
 
-function calcTotalStitchesInMeter() {
-    stitchesToCastOn = document.getElementById('rows-to-knit').value;
-    rowsToKnit = document.getElementById('stitches-to-cast-on').value;
-    totalStitches = stitchesToCastOn * rowsToKnit;
-    document.getElementById('project-yarn-length').innerHTML = totalStitches / 1000;
+    calcTotalStitches(stitchesToCastOn, rowsToKnit);
+    calcNumberOfSkeins(totalStitches, skeinLength);
+});
+
+function calcTotalStitches(stitchesToCastOn, rowsToKnit) {
+    document.getElementById('project-yarn-length').innerHTML = multiply(stitchesToCastOn, rowsToKnit/1000);
 };
 
-function calcNumberOfSkeins() {
-    totalStitches = document.getElementById('project-yarn-length').value;
-    skeinLength = document.getElementById('skein-length').value;
-    numberOfSkeins = totalStitches / skeinLength;
-    document.getElementById('number-of-skeins').innerHTML = numberOfSkeins;
+
+function calcNumberOfSkeins(totalStitches, skeinLength) {
+    document.getElementById('number-of-skeins').innerHTML = divide(totalStitches, skeinLength);
 };
 
-
-
-//Calculate how to increase or decrease - WORKS
-function calcIncreseDecrease() {
-    currentStitches = document.getElementById('current-stitch-count').value;
-    stitchesToIncreaseDecrease = document.getElementById('stitches-to-increase-decrease').value;
-    evenlyToIncreseDecrease = currentStitches / stitchesToIncreaseDecrease;
-    document.getElementById('evenly-increase-decrease').innerHTML = evenlyToIncreseDecrease;
-};
-
+//Calculate how to increase or decrease - not working, not writing back
 let btnCalcIncreseDecrease = document.getElementById('btn-calc-increase-decrease');
-btnCalcIncreseDecrease.addEventListener('click', calcIncreseDecrease);
+btnCalcIncreseDecrease.addEventListener('click', () => {
+    
+    let currentStitches = document.getElementById('current-stitch-count').value;
+    let stitchesToIncreaseDecrease = document.getElementById('stitches-to-increase-decrease').value;
+
+    calcIncreseDecrease(currentStitches, stitchesToIncreaseDecrease)
+
+});
+
+function calcIncreseDecrease(currentStitches, stitchesToIncreaseDecrease) {
+    document.getElementById('evenly-increase-decrease').innerHTML = divide(currentStitches, stitchesToIncreaseDecrease);
+};
+
+
 
 // General calculations
 

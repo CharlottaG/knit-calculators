@@ -95,6 +95,17 @@ div {
     padding: 10px;
 }
 
+.result {
+    font-size: 2rem;
+    color: orange;
+}
+
+.calc-section {
+    background-color: rgba(21, 1, 8, 0.6);
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
 .modal {
     display: none;
     position: fixed;
