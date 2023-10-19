@@ -141,3 +141,22 @@ function multiply(num1, num2) {
 function devide(num1, num2) {
     return num1 / num2;
 };
+
+-----
+
+    function calcGauge() {
+        stitchesPerCm;
+        rowsPerCm;
+    };
+
+function stitchesPerCm() {
+    userSwatchStitches = document.getElementById('user-swatch-stitches').value;
+    numberOfStitchesPerCm = userSwatchStitches / 10;
+    document.getElementById('user-stitches-per-cm').innerHTML = numberOfStitchesPerCm;
+};
+
+function rowsPerCm() {
+    userSwatchRows = document.getElementById('user-swatch-rows').value;
+    numberOfRowsPerCm = userSwatchRows / 10;
+    document.getElementById('user-rows-per-cm').innerHTML = numberOfRowsPerCm;
+};

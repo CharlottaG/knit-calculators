@@ -14,16 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-let userSwatchStitches;
-let userSwatchRows;
 let numberOfStitchesPerCm;
 let numberOfRowsPerCm;
 let numberOfStitchesToCastOn;
-let desiredWidth;
-let desiredLength;
 let skeinLength;
 let rowsToKnit;
-//let stitchesToCastOn;
 let currentStitches;
 let stitchesToIncreaseDecrease;
 let evenlyToIncreseDecrease;
@@ -37,68 +32,65 @@ function closeModal() {
     modal.style.display = 'none';
 };
 
-//Swatch calculation for gauge
-//Function does not work
-function calcGauge() {
-    stitchesPerCm;
-    rowsPerCm;
+//Swatch calculation for gauge - OK
+let btnCalcGauge = document.getElementById('btn-calc-gauge');
+btnCalcGauge.addEventListener('click', () => {
+
+    let userSwatchStitches = document.getElementById('user-swatch-stitches').value;
+    let userSwatchRows = document.getElementById('user-swatch-rows').value;
+    let num1 = 10;
+
+    stitchesPerCm(userSwatchStitches, num1);
+    rowsPerCm(userSwatchRows, num1);
+});
+
+function stitchesPerCm(userSwatchStitches, num1) {
+    document.getElementById('user-stitches-per-cm').innerHTML = divide(userSwatchStitches, num1);
 };
 
-function stitchesPerCm() {
-    userSwatchStitches = document.getElementById('user-swatch-stitches').value;
-    numberOfStitchesPerCm = userSwatchStitches / 10;
-    document.getElementById('user-stitches-per-cm').innerHTML = numberOfStitchesPerCm;
+function rowsPerCm(userSwatchRows, num1) {
+    document.getElementById('user-rows-per-cm').innerHTML = divide(userSwatchRows, num1);
 };
 
-function rowsPerCm() {
-    userSwatchRows = document.getElementById('user-swatch-rows').value;
-    numberOfRowsPerCm = userSwatchRows / 10;
-    document.getElementById('user-rows-per-cm').innerHTML = numberOfRowsPerCm;
+
+//Calculate cast-on stitches - Returns NaN
+let btnCalcCastOn = document.getElementById('btn-calc-cast-on');
+btnCalcCastOn.addEventListener('click', () => {
+
+    let desiredWidth = document.getElementById('desired-width').value;
+    let desiredLength = document.getElementById('desired-length').value;
+
+    calcStitchesToCastOn(desiredWidth, numberOfStitchesPerCm);
+    calcRowsToKnit(desiredLength, numberOfRowsPerCm);
+});
+
+function calcStitchesToCastOn(desiredWidth, numberOfStitchesPerCm) {
+    document.getElementById('stitches-to-cast-on').innerHTML = multiply(desiredWidth, numberOfStitchesPerCm);
 };
 
-btnCalcGauge = document.getElementById('btn-calc-gauge');
-btnCalcGauge.addEventListener('click', calcGauge);
-
-//Calculate cast-on stitches
-function calcCastOn() {
-    calcStitchesToCastOn;
-    calcRowsToKnit;
-}
-
-function calcStitchesToCastOn() {
-    desiredWidth = document.getElementById('desired-width').value;
-    numberOfStitchesToCastOn = desiredWidth * numberOfStitchesPerCm;
-    document.getElementById('stitches-to-cast-on').innerHTML = numberOfStitchesToCastOn;
+function calcRowsToKnit(desiredLength, numberOfRowsPerCm) {
+    document.getElementById('rows-to-knit').innerHTML = multiply(desiredLength, numberOfRowsPerCm);
 };
 
-function calcRowsToKnit() {
-    desiredLength = document.getElementById('desired-length').value;
-    numberOfRowsToKnit = desiredLength * numberOfRowsPerCm;
-    document.getElementById('rows-to-knit').innerHTML = numberOfRowsToKnit;
-};
+//Calculate total number of skeins needed - returns NaN
+let btnCalcYarn = document.getElementById('btn-calc-yarn');
+btnCalcYarn.addEventListener('click', calcNumberOfSkeins);
 
-//Not working
-btnCalcCastOn = document.getElementById('btn-calc-cast-on');
-btnCalcCastOn.addEventListener('click', calcCastOn);
-
-//Calculate total number of skeins needed
 function calcTotalStitchesInMeter() {
     stitchesToCastOn = document.getElementById('rows-to-knit').value;
     rowsToKnit = document.getElementById('stitches-to-cast-on').value;
     totalStitches = stitchesToCastOn * rowsToKnit;
-    document.getElementById('project-yarn-length').innerHTML = totalStitches/1000;
+    document.getElementById('project-yarn-length').innerHTML = totalStitches / 1000;
 };
 
 function calcNumberOfSkeins() {
     totalStitches = document.getElementById('project-yarn-length').value;
     skeinLength = document.getElementById('skein-length').value;
     numberOfSkeins = totalStitches / skeinLength;
-    document.getElementById('number-of-skeins').innerHTML = numberOfSkeins;    
+    document.getElementById('number-of-skeins').innerHTML = numberOfSkeins;
 };
 
-//returns NaN
-btnCalcYarn = document.getElementById('btn-calc-yarn');
-btnCalcYarn.addEventListener('click', calcNumberOfSkeins);
+
 
 //Calculate how to increase or decrease - WORKS
 function calcIncreseDecrease() {
@@ -108,9 +100,18 @@ function calcIncreseDecrease() {
     document.getElementById('evenly-increase-decrease').innerHTML = evenlyToIncreseDecrease;
 };
 
-btnCalcIncreseDecrease = document.getElementById('btn-calc-increase-decrease');
+let btnCalcIncreseDecrease = document.getElementById('btn-calc-increase-decrease');
 btnCalcIncreseDecrease.addEventListener('click', calcIncreseDecrease);
 
+// General calculations
+
+function multiply(num1, num2) {
+    return num1 * num2;
+};
+
+function divide(num1, num2) {
+    return num1 / num2;
+};
 
 
 

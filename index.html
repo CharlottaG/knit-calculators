@@ -37,30 +37,30 @@
             <div>
                 <p>Number of <em>stitches</em> within 10x10 cm (4x4 inches): <input id="user-swatch-stitches" type="number"></p>
                 <p>Number of <em>rows</em> within 10x10 cm (4x4 inches): <input id="user-swatch-rows" type="number"></p>
-                <button id="btn-calc-gauge" class="btn" onclick="calcGauge()">Calculate my gauge</button>
+                <button id="btn-calc-gauge" class="btn">Calculate my gauge</button>
             </div>
             <div class="results">
-                <p>Stitches/cm (inch): <span id="user-stitches-per-cm"> 0 </span></p>
-                <p>Rows/cm (inch): <span id="user-rows-per-cm"> 0 </span></p>
+                <p>Stitches/cm (inch): <span id="user-stitches-per-cm" class="result"> 0 </span></p>
+                <p>Rows/cm (inch): <span id="user-rows-per-cm" class="result"> 0 </span></p>
             </div>
             <!-- Cast-on-->
             <div>
                 <p>Enter desired width: <input id="desired-width" type="number"></p>
                 <p>Enter desired length: <input id="desired-length" type="number"></p>
-                <button id="btn-calc-cast-on" onclick="calcCastOn()">Calculate my cast-on</button>
+                <button id="btn-calc-cast-on">Calculate my cast-on</button>
             </div>
             <div class="results">
-                <p>Stitches to cast-on: <span id="stitches-to-cast-on"> 0 </span></p>
-                <p>Rows to knit: <span id="rows-to-knit"> 0 </span></p>
+                <p>Stitches to cast-on: <span id="stitches-to-cast-on" class="result"> 0 </span></p>
+                <p>Rows to knit: <span id="rows-to-knit" class="result"> 0 </span></p>
             </div>
             <!-- Yarn-->
             <div>
             <p>Yarn length/skein: <input type="number" id="skein-length"></p>
             </div>
             <div class="results">
-                <p>The required yarn length for your project is: <span id="project-yarn-length"> 0 </span></p>
-                <p>Which is equal to <span id="number-of-skeins"> 0 </span> numer of skeins in selected yarn type.</p>
-                <button id="btn-clac-yarn" onclick="calcNumberOfSkeins()">Yarn</button>
+                <p>The required yarn length for your project is: <span id="project-yarn-length" class="result"> 0 </span></p>
+                <p>Which is equal to <span id="number-of-skeins" class="result"> 0 </span> number of skeins in selected yarn type.</p>
+                <button id="btn-clac-yarn">Yarn</button>
             </div>
             <!-- Increase/Decrease-->
             <div>
@@ -68,9 +68,9 @@
                 <p>Number od stitches to increase/decrease: <input type="number" id="stitches-to-increase-decrease"></p>
             </div>
             <div class="reaults">
-                    <p>Evenly increase/decrease: <span id="evenly-increase-decrease"> 0 </span></p>
+                    <p>Evenly increase/decrease: <span id="evenly-increase-decrease"class="result"> 0 </span></p>
             </div>
-                <button id="btn-calc-increase-decrease" onclick="calcIncreseDecrease()">Increase/Decrease</button>
+                <button id="btn-calc-increase-decrease">Increase/Decrease</button>
         </section>
         <!-- Modals -->
         <section id="modal-learn-more" class="modal black-bkgr>
