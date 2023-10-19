@@ -21,6 +21,9 @@ let numberOfRowsPerCm;
 let numberOfStitchesToCastOn;
 let desiredWidth;
 let desiredLength;
+let skeinLength;
+let rowsToKnit;
+let stitchesToCastOn;
 
 
 const modalLearnMore = document.getElementById('modal-learn-more');
@@ -61,4 +64,21 @@ function rowsToKnit() {
     numberOfRowsToKnit = desiredLength * numberOfRowsPerCm;
     document.getElementById('rows-to-knit').innerHTML = numberOfRowsToKnit;
 };
+
+function calcTotalStitchesInMeter() {
+    stitchesToCastOn = document.getElementById('rows-to-knit').value;
+    rowsToKnit = document.getElementById('stitches-to-cast-on').value;
+    totalStitches = stitchesToCastOn * rowsToKnit;
+    document.getElementById('project-yarn-length').innerHTML = totalStitches/1000;
+};
+
+function calcNumberOfSkeins() {
+    totalStitches = document.getElementById('project-yarn-length').value;
+    skeinLength = document.getElementById('skein-length').value;
+    numberOfSkeins = totalStitches / skeinLength;
+    document.getElementById('number-of-skeins').innerHTML = numberOfSkeins;    
+};
+
+
+
 
