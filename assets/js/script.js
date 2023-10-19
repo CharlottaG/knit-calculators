@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     let buttons = document.getElementsByClassName('modal-button'); //To only call modal opening buttons
 
-        for (let button of buttons) {
+    for (let button of buttons) {
         button.addEventListener("click", function () {
 
             if (this.getAttribute('data-type') === 'gauge') {
@@ -91,7 +91,7 @@ function calcRowsToKnit(desiredLength, numberOfRowsPerCm) {
     document.getElementById('rows-to-knit').innerHTML = multiply(desiredLength, numberOfRowsPerCm);
 };
 
-//Calculate total number of skeins needed - 
+//Calculate total number of skeins needed
 let btnCalcYarn = document.getElementById('btn-calc-yarn');
 btnCalcYarn.addEventListener('click', () => {
     let stitchesToCastOn = document.getElementById('rows-to-knit').textContent;
@@ -104,7 +104,7 @@ btnCalcYarn.addEventListener('click', () => {
 });
 
 function calcTotalStitches(stitchesToCastOn, rowsToKnit) {
-    document.getElementById('project-yarn-length').innerHTML = multiply(stitchesToCastOn, rowsToKnit);
+    document.getElementById('project-yarn-length').innerHTML = multiply(stitchesToCastOn, rowsToKnit / 1000);
 };
 
 function calcNumberOfSkeins(totalStitches, skeinLength) {
@@ -126,16 +126,14 @@ function calcIncreseDecrease(currentStitches, stitchesToIncreaseDecrease) {
     document.getElementById('evenly-increase-decrease').innerHTML = divide(currentStitches, stitchesToIncreaseDecrease);
 };
 
-
-
 // General calculations
 
 function multiply(num1, num2) {
-    return num1 * num2;
+    return Math.round(num1) * num2;
 };
 
 function divide(num1, num2) {
-    return num1 / num2;
+    return Math.round(num1) / num2;
 };
 
 
