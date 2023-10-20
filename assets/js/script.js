@@ -47,25 +47,33 @@ btnCalcGauge.addEventListener('click', () => {
 });
 
 function stitchesPerCm(userSwatchStitches, num1) {
-    document.getElementById('user-stitches-per-cm').innerHTML = divide(userSwatchStitches, num1).toFixed(1);
+    document.getElementById('user-stitches-per-cm').innerHTML = divide(userSwatchStitches, num1);
 }
 
 function rowsPerCm(userSwatchRows, num1) {
-    document.getElementById('user-rows-per-cm').innerHTML = divide(userSwatchRows, num1).toFixed(1);
+    document.getElementById('user-rows-per-cm').innerHTML = divide(userSwatchRows, num1);
 }
 
 //Calculate cast-on stitches
 var btnCalcCastOn = document.getElementById('btn-calc-cast-on');
 btnCalcCastOn.addEventListener('click', () => {
 
-    var desiredWidth = document.getElementById('desired-width').value;
-    var desiredLength = document.getElementById('desired-length').value;
-    var numberOfStitchesPerCm = document.getElementById('user-stitches-per-cm').textContent;
-    var numberOfRowsPerCm = document.getElementById('user-rows-per-cm').textContent;
+    var numberOfStitchesPerCm = document.getElementById('user-stitches-per-cm').value;
+    var numberOfRowsPerCm = document.getElementById('user-rows-per-cm').value;
+    //Check that previous fields are filled in for those calculations that require that information
+    if (numberOfStitchesPerCm && numberOfRowsPerCm !== '0') {
+        var desiredWidth = document.getElementById('desired-width').value;
+        var desiredLength = document.getElementById('desired-length').value;
+        var numberOfStitchesPerCm = document.getElementById('user-stitches-per-cm').textContent;
+        var numberOfRowsPerCm = document.getElementById('user-rows-per-cm').textContent;
 
-    calcStitchesToCastOn(desiredWidth, numberOfStitchesPerCm);
-    calcRowsToKnit(desiredLength, numberOfRowsPerCm);
-});
+        calcStitchesToCastOn(desiredWidth, numberOfStitchesPerCm);
+        calcRowsToKnit(desiredLength, numberOfRowsPerCm);
+    } else {
+        alert('You need to fill in the fields from the previous section');
+    }
+}
+);
 
 function calcStitchesToCastOn(desiredWidth, numberOfStitchesPerCm) {
     document.getElementById('stitches-to-cast-on').innerHTML = multiply(desiredWidth, numberOfStitchesPerCm).toFixed(1);
@@ -79,16 +87,23 @@ function calcRowsToKnit(desiredLength, numberOfRowsPerCm) {
 var btnCalcYarn = document.getElementById('btn-calc-yarn');
 btnCalcYarn.addEventListener('click', () => {
 
-    var stitchesToCastOn = document.getElementById('stitches-to-cast-on').textContent;
-    var rowsToKnit = document.getElementById('rows-to-knit').textContent;
-    var skeinLength = document.getElementById('skein-length').value;
-    var totalStitches = multiply(stitchesToCastOn, rowsToKnit);
-    var totalYarn = multiply(totalStitches, 2);
-    var totalYarnPerMeter = divide(totalYarn, 100);
-    var numberOfSkeins = divide(totalYarnPerMeter, skeinLength);
+    var desiredWidth = document.getElementById('desired-width').value;
+    var desiredLength = document.getElementById('desired-length').value;
+    //Check that previous fields are filled in for those calculations that require that information
+    if (desiredWidth && desiredLength !== '0') {
 
-    document.getElementById('number-of-skeins').innerHTML = numberOfSkeins.toFixed(1);
-    
+        var stitchesToCastOn = document.getElementById('stitches-to-cast-on').textContent;
+        var rowsToKnit = document.getElementById('rows-to-knit').textContent;
+        var skeinLength = document.getElementById('skein-length').value;
+        var totalStitches = multiply(stitchesToCastOn, rowsToKnit);
+        var totalYarn = multiply(totalStitches, 2);
+        var totalYarnPerMeter = divide(totalYarn, 100);
+        var numberOfSkeins = divide(totalYarnPerMeter, skeinLength);
+
+        document.getElementById('number-of-skeins').innerHTML = numberOfSkeins.toFixed(1);
+    } else {
+        alert('You need to fill in the fields from the previous section');
+    }
 });
 
 //Calculate how to increase or decrease
@@ -135,4 +150,3 @@ function closeModalYarn() {
 function closeModalIncreseDecrease() {
     modalIncreseDecrease.style.display = 'none';
 }
-
