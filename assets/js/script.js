@@ -78,13 +78,13 @@ function calcRowsToKnit(desiredLength, numberOfRowsPerCm) {
 //Calculate total number of skeins needed
 var btnCalcYarn = document.getElementById('btn-calc-yarn');
 btnCalcYarn.addEventListener('click', () => {
-    var stitchesToCastOn = document.getElementById('rows-to-knit').textContent;
-    var rowsToKnit = document.getElementById('stitches-to-cast-on').textContent;
+    var stitchesToCastOn = document.getElementById('stitches-to-cast-on').textContent;
+    var rowsToKnit = document.getElementById('rows-to-knit').textContent;
     //var totalStitches = document.getElementById('project-yarn-length').textContent;
     var skeinLength = document.getElementById('skein-length').value;
-    var totalStitches = document.getElementById('project-yarn-length').innerHTML = multiply(stitchesToCastOn, rowsToKnit / 1000);
+    var totalStitches = multiply(stitchesToCastOn, rowsToKnit);
 
-    calcTotalStitches(stitchesToCastOn, rowsToKnit);
+    //calcTotalStitches(stitchesToCastOn, rowsToKnit);
     calcNumberOfSkeins(totalStitches, skeinLength);
 });
 
