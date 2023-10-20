@@ -31,7 +31,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
@@ -81,6 +81,10 @@ main {
 
 .hidden {
     display: none;
+}
+
+#button-heading {
+    margin-top: 50px;
 }
 
 button {
