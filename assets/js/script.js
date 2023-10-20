@@ -58,19 +58,18 @@ function rowsPerCm(userSwatchRows, num1) {
 var btnCalcCastOn = document.getElementById('btn-calc-cast-on');
 btnCalcCastOn.addEventListener('click', () => {
 
-    var numberOfStitchesPerCm = document.getElementById('user-stitches-per-cm').value;
-    var numberOfRowsPerCm = document.getElementById('user-rows-per-cm').value;
+    var desiredWidth = document.getElementById('desired-width').value;
+    var desiredLength = document.getElementById('desired-length').value;
+    var numberOfStitchesPerCm = document.getElementById('user-stitches-per-cm').textContent;
+    var numberOfRowsPerCm = document.getElementById('user-rows-per-cm').textContent;
+    var StitchesPerCm = document.getElementById('user-stitches-per-cm').innerHTML;
+    var RowsPerCm = document.getElementById('user-rows-per-cm').innerHTML;
     //Check that previous fields are filled in for those calculations that require that information
-    if (numberOfStitchesPerCm && numberOfRowsPerCm !== '0') {
-        var desiredWidth = document.getElementById('desired-width').value;
-        var desiredLength = document.getElementById('desired-length').value;
-        var numberOfStitchesPerCm = document.getElementById('user-stitches-per-cm').textContent;
-        var numberOfRowsPerCm = document.getElementById('user-rows-per-cm').textContent;
-
+    if (StitchesPerCm !== '0' && RowsPerCm !== '0') {
         calcStitchesToCastOn(desiredWidth, numberOfStitchesPerCm);
         calcRowsToKnit(desiredLength, numberOfRowsPerCm);
     } else {
-        alert('You need to fill in the fields from the previous section');
+        alert('You need to complete the previous calculation first');
     }
 }
 );
@@ -87,22 +86,19 @@ function calcRowsToKnit(desiredLength, numberOfRowsPerCm) {
 var btnCalcYarn = document.getElementById('btn-calc-yarn');
 btnCalcYarn.addEventListener('click', () => {
 
-    var desiredWidth = document.getElementById('desired-width').value;
-    var desiredLength = document.getElementById('desired-length').value;
+    var stitchesToCastOn = document.getElementById('stitches-to-cast-on').value;
+    var rowsToKnit = document.getElementById('rows-to-knit').textContent;
+    var skeinLength = document.getElementById('skein-length').value;
+    var totalStitches = multiply(stitchesToCastOn, rowsToKnit);
+    var totalYarn = multiply(totalStitches, 2);
+    var totalYarnPerMeter = divide(totalYarn, 100);
+    var numberOfSkeins = divide(totalYarnPerMeter, skeinLength);
+
     //Check that previous fields are filled in for those calculations that require that information
-    if (desiredWidth && desiredLength !== '0') {
-
-        var stitchesToCastOn = document.getElementById('stitches-to-cast-on').textContent;
-        var rowsToKnit = document.getElementById('rows-to-knit').textContent;
-        var skeinLength = document.getElementById('skein-length').value;
-        var totalStitches = multiply(stitchesToCastOn, rowsToKnit);
-        var totalYarn = multiply(totalStitches, 2);
-        var totalYarnPerMeter = divide(totalYarn, 100);
-        var numberOfSkeins = divide(totalYarnPerMeter, skeinLength);
-
-        document.getElementById('number-of-skeins').innerHTML = numberOfSkeins.toFixed(1);
+    if (stitchesToCastOn === '0') {
+        alert('You need to complete the previous calculation first');
     } else {
-        alert('You need to fill in the fields from the previous section');
+        document.getElementById('number-of-skeins').innerHTML = numberOfSkeins.toFixed(1);      
     }
 });
 
