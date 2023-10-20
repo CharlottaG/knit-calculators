@@ -113,11 +113,11 @@ function calcIncreseDecrease(currentStitches, stitchesToIncreaseDecrease) {
 // General calculations
 
 function multiply(num1, num2) {
-    return Math.round(num1) * num2;
+    return num1 * num2;
 }
 
 function divide(num1, num2) {
-    return Math.round(num1) / num2;
+    return num1 / num2;
 }
 
 //Close Gauge modal

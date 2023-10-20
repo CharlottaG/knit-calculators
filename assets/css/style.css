@@ -16,7 +16,7 @@ body {
     position: relative;
     font-family: 'Raleway', sans-serif;
     font-size: 0.8rem;
-    color: whitesmoke;
+    color: white;
 }
 
 h1 {
@@ -85,7 +85,7 @@ main {
 
 button {
     background-color: orange;
-    color: white;
+    color: black;
     font-weight: 600;
     font-size: 1.1rem;
     padding: 5px;
@@ -135,7 +135,7 @@ em {
 .modal-button {
     margin-bottom: 20px;
     padding: 10px;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .close-modal {
