@@ -80,16 +80,17 @@ var btnCalcYarn = document.getElementById('btn-calc-yarn');
 btnCalcYarn.addEventListener('click', () => {
     var stitchesToCastOn = document.getElementById('rows-to-knit').textContent;
     var rowsToKnit = document.getElementById('stitches-to-cast-on').textContent;
-    var totalStitches = document.getElementById('project-yarn-length').textContent;
+    //var totalStitches = document.getElementById('project-yarn-length').textContent;
     var skeinLength = document.getElementById('skein-length').value;
+    var totalStitches = document.getElementById('project-yarn-length').innerHTML = multiply(stitchesToCastOn, rowsToKnit / 1000);
 
     calcTotalStitches(stitchesToCastOn, rowsToKnit);
     calcNumberOfSkeins(totalStitches, skeinLength);
 });
 
-function calcTotalStitches(stitchesToCastOn, rowsToKnit) {
+/*function calcTotalStitches(stitchesToCastOn, rowsToKnit) {
     document.getElementById('project-yarn-length').innerHTML = multiply(stitchesToCastOn, rowsToKnit / 1000);
-}
+}*/
 
 function calcNumberOfSkeins(totalStitches, skeinLength) {
     document.getElementById('number-of-skeins').innerHTML = divide(totalStitches, skeinLength);
