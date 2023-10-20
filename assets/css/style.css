@@ -38,14 +38,21 @@ h3 {
 p{
     margin-bottom: 10px;
 }
+fieldset {
+    padding: 5px;
+    max-width: 600px;
+}
 
 legend {
     font-weight: 600;
     font-style: normal;
+    font-size: 1.1rem;
+    padding: 10px;
 }
 
 label {
     font-weight: 600;
+    margin-top: 50px;
 }
 
 /* Header */
@@ -121,6 +128,7 @@ em {
     overflow: auto;
     background-color: orange;
     padding: 20px;
+    color: black;
 }
 
 .close-modal {

@@ -120,6 +120,23 @@ function divide(num1, num2) {
     return Math.round(num1) / num2;
 }
 
+//Close Gauge modal
 function closeModalGauge() {
     modalGauge.style.display = 'none';
 }
+
+//Close Cast-on modal
+function closeModalCastOn() {
+    modalCastOn.style.display = 'none';
+}
+
+//Close Yarn modal
+function closeModalYarn() {
+    modalYarn.style.display = 'none';
+}
+
+//Close Increade/Decrease modal
+function closeModalIncreseDecrease() {
+    modalIncreseDecrease.style.display = 'none';
+}
+
