@@ -62,15 +62,9 @@ btnCalcCastOn.addEventListener('click', () => {
     var desiredLength = document.getElementById('desired-length').value;
     var numberOfStitchesPerCm = document.getElementById('user-stitches-per-cm').textContent;
     var numberOfRowsPerCm = document.getElementById('user-rows-per-cm').textContent;
-    var StitchesPerCm = document.getElementById('user-stitches-per-cm').innerHTML;
-    var RowsPerCm = document.getElementById('user-rows-per-cm').innerHTML;
-    //Check that previous fields are filled in for those calculations that require that information
-    if (StitchesPerCm !== '0' && RowsPerCm !== '0') {
-        calcStitchesToCastOn(desiredWidth, numberOfStitchesPerCm);
-        calcRowsToKnit(desiredLength, numberOfRowsPerCm);
-    } else {
-        alert('You need to complete the previous calculation first');
-    }
+
+    calcStitchesToCastOn(desiredWidth, numberOfStitchesPerCm);
+    calcRowsToKnit(desiredLength, numberOfRowsPerCm);
 }
 );
 
@@ -86,7 +80,7 @@ function calcRowsToKnit(desiredLength, numberOfRowsPerCm) {
 var btnCalcYarn = document.getElementById('btn-calc-yarn');
 btnCalcYarn.addEventListener('click', () => {
 
-    var stitchesToCastOn = document.getElementById('stitches-to-cast-on').value;
+    var stitchesToCastOn = document.getElementById('stitches-to-cast-on').textContent;
     var rowsToKnit = document.getElementById('rows-to-knit').textContent;
     var skeinLength = document.getElementById('skein-length').value;
     var totalStitches = multiply(stitchesToCastOn, rowsToKnit);
@@ -94,13 +88,9 @@ btnCalcYarn.addEventListener('click', () => {
     var totalYarnPerMeter = divide(totalYarn, 100);
     var numberOfSkeins = divide(totalYarnPerMeter, skeinLength);
 
-    //Check that previous fields are filled in for those calculations that require that information
-    if (stitchesToCastOn === '0') {
-        alert('You need to complete the previous calculation first');
-    } else {
-        document.getElementById('number-of-skeins').innerHTML = numberOfSkeins.toFixed(1);      
-    }
-});
+    document.getElementById('number-of-skeins').innerHTML = numberOfSkeins.toFixed(1);      
+}
+);
 
 //Calculate how to increase or decrease
 var btnCalcIncreseDecrease = document.getElementById('btn-calc-increase-decrease');
