@@ -1,184 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Knit Calculators</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/favicons/favicon.ico" />
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/images/favicons/favicon.ico"
+    />
+  </head>
+  <body>
     <!-- Header -->
     <header>
-        <h1>Knitting Calculators</h1>
+      <h1>Knitting Calculators</h1>
     </header>
 
     <!-- Main -->
     <main>
-        <!-- Intro -->
-        <section id="intro">
-            <div>
-                <h2>Welcome to our knitting calculators</h2>
-                <p>Whether you're a seasoned knitting pro or just picking up your first
-                set of needles, we've got you covered. Our knitting calculator is
-                the perfect tool to help you create beautiful, custom-made knitted
-                creations with ease and precision.</p>
-                <h3>What do you want to learn more about?</h3>
-                <button class="modal-button" data-type="gauge">Gauge</button>
-                <button class="modal-button" data-type="cast-on">Cast-on</button>
-                <button class="modal-button" data-type="yarn">Yarn</button>
-                <button class="modal-button" data-type="increase-decrease">Increases &amp; Decreases</button>
-            </div>
-        </section>
-        <!-- User input section -->
-        <section id="user-input" class="input-box">
-            <!-- Swatch-->
-            <div class="calc-section">
-                <form>
-                    <fieldset>
-                        <legend>Stitches/rows per cm</legend>
-                        <label for="user-swatch-stitches">Number of <em>stitches</em> within 10x10 cm: </label><input type="number" id="user-swatch-stitches" required>
-                        <br>
-                        <label for="user-swatch-rows">Number of <em>rows</em> within 10x10 cm: </label><input type="number" id="user-swatch-rows" required>
-                        <br>
-                        <button type="submit" id="btn-calc-gauge">Calculate my gauge</button>
-                    </fieldset>
-                </form>
-                <p>Stitches/cm: <span id="user-stitches-per-cm" class="result"> 0 </span></p>
-                <p>Rows/cm: <span id="user-rows-per-cm" class="result"> 0 </span></p>
-            </div>
-            <!-- Cast-on-->
-            <div class="calc-section" id="cast-on-section">
-                <form>
-                    <fieldset><legend>Number of stitches to cast-on</legend>
-                        <em>You need to fill in the swatch fields above in order for the calculation to work!</em>
-                        <p><label for="desired-width">Enter desired width: </label><input type="number" id="desired-width"required></p>
-                        <p><label for="desired-length">Enter desired length: </label><input type="number" id="desired-length" required></p>
-                        
-                        <br>
-                        <button id="btn-calc-cast-on">Calculate my cast-on</button>
-                    </fieldset>
-                </form>
-                <p>Stitches to cast-on: <span id="stitches-to-cast-on" class="result"> 0 </span></p>
-                <p>Rows to knit: <span id="rows-to-knit" class="result"> 0 </span></p>
-            </div>
-            <!-- Yarn-->
-            <div class="calc-section" id="yarn-section">
-                <form>
-                    <fieldset>
-                        <legend>How many skeins you need</legend>
-                        <em>You need to fill in the desired width and length fields above in order for the calculation to work!</em>
-                        <p><label for="skein-length">Yarn length/skein: </label><input type="number" id="skein-length" required></p>
-                        <br>
-                        <button id="btn-calc-yarn">Calculate skeins</button>
-                    </fieldset>
-                </form>
-                <p>The required yarn length for your project is: <span id="project-yarn-length" class="result"> 0 </span></p>
-                <p>Which is equal to <span id="number-of-skeins" class="result"> 0 </span> number of skeins in selected yarn type.</p>
-            </div>
-            <!-- Increase/Decrease-->
-            <div class="calc-section" id="increase-decrease-section">
-                <form>
-                    <fieldset>
-                        <legend>How to evenly increase or decrease</legend>
-                        <p><label for="current-stitch-count">Your current number of stitches: </label><input type="number" id="current-stitch-count" required></p>
-                        <p><label for="stitches-to-increase-decrease">Number of stitches to increase/decrease: </label><input type="number" id="stitches-to-increase-decrease" required></p>
-                        <button id="btn-calc-increase-decrease">Calculate increase/decrease</button>
-                    </fieldset>
-                </form>
-                <p>Increase/decrease every<span id="evenly-increase-decrease" class="result"> 0 </span> stitches.</p>
-            </div>
-        </section>
-        <!-- Modals -->
-        <section id="modal-gauge" class="modal black-bkgr">
-            <div>
-                <h3>Calculate your gauge</h3><span class="close-modal" onclick="closeModalGauge()">x</span>
-            </div>
-            <div>
-                <p>Knitting a swatch to calculate your gauge is an important step when working on a knitting project, especially if you
-                want your finished piece to have the correct size and fit. Use the same yarn and size of knitting needles you plan to
-                use for your project. Begin by casting on a certain number of stitches. Typically, this is around 20-30 stitches.
-                </p>
-                <p>
-                After knitting several rows, you'll want to measure your swatch. Lay it flat and use a measuring tape or ruler to
-                measure the number of stitches across (horizontally) and the number of rows (vertically) within a 4-inch (10 cm) square.
-                To calculate your gauge, you'll need to count how many stitches you have per 4 inches horizontally and how many rows per
-                4 inches vertically. For example, if you have 20 stitches and 28 rows in 4 inches, your gauge would be 20 stitches and
-                28 rows per 4 inches.
-                </p>
-                <p>
-                If your gauge does not match the gauge specified in the pattern, you may need to adjust your needle size. If your swatch
-                has more stitches per 4 inches than the pattern specifies, try larger needles. If it has fewer stitches, try smaller
-                needles. Knit another swatch with the adjusted needles and measure again until you achieve the correct gauge.
-                </p>
-            </div>
-        </section>
+      <!-- Intro -->
+      <section id="intro">
+        <div>
+          <h2>Welcome to our knitting calculators</h2>
+          <p>
+            Whether you're a seasoned knitting pro or just picking up your first
+            set of needles, we've got you covered. Our knitting calculator is
+            the perfect tool to help you create beautiful, custom-made knitted
+            creations with ease and precision.
+          </p>
+          <h3>What do you want to learn more about?</h3>
+          <button class="modal-button" data-type="gauge">Gauge</button>
+          <button class="modal-button" data-type="cast-on">Cast-on</button>
+          <button class="modal-button" data-type="yarn">Yarn</button>
+          <button class="modal-button" data-type="increase-decrease">
+            Increases &amp; Decreases
+          </button>
+        </div>
+      </section>
+      <!-- User input section -->
+      <section id="user-input" class="input-box">
+        <h3>Calculators</h3>
+        <!-- Swatch-->
+        <div class="calc-section">
+          <form>
+            <fieldset>
+              <legend>Stitches/rows per cm</legend>
+              <label for="user-swatch-stitches"
+                >Number of <u>stitches</u> within 10x10 cm: </label
+              ><input type="number" id="user-swatch-stitches" required />
+              <br />
+              <label for="user-swatch-rows"
+                >Number of <u>rows</u> within 10x10 cm: </label
+              ><input type="number" id="user-swatch-rows" required />
+              <br />
+              <button type="submit" id="btn-calc-gauge">
+                Calculate my gauge
+              </button>
+            </fieldset>
+          </form>
+          <p>
+            Stitches/cm:
+            <span id="user-stitches-per-cm" class="result"> 0 </span>
+          </p>
+          <p>Rows/cm: <span id="user-rows-per-cm" class="result"> 0 </span></p>
+        </div>
+        <!-- Cast-on-->
+        <div class="calc-section" id="cast-on-section">
+          <form>
+            <fieldset>
+              <legend>Number of stitches to cast-on</legend>
+              <p>
+                <em>
+                  You need to fill in the swatch fields above in order for the
+                  calculation to work!</em
+                >
+              </p>
+              <br />
+              <label for="desired-width">Enter desired width: </label
+              ><input type="number" id="desired-width" required />
+              <br />
+              <label for="desired-length">Enter desired length: </label
+              ><input type="number" id="desired-length" required />
+              <br />
+              <button id="btn-calc-cast-on">Calculate my cast-on</button>
+            </fieldset>
+          </form>
+          <p>
+            Stitches to cast-on:
+            <span id="stitches-to-cast-on" class="result"> 0 </span>
+          </p>
+          <p>Rows to knit: <span id="rows-to-knit" class="result"> 0 </span></p>
+        </div>
+        <!-- Yarn-->
+        <div class="calc-section" id="yarn-section">
+          <form>
+            <fieldset>
+              <legend>How many skeins you need</legend>
+              <p>
+                <em>
+                  You need to fill in the desired width and length fields above
+                  in order for the calculation to work!
+                </em>
+              </p>
+              <br />
+              <label for="skein-length">Yarn length/skein: </label
+              ><input type="number" id="skein-length" required />
+              <br />
+              <button id="btn-calc-yarn">Calculate skeins</button>
+            </fieldset>
+          </form>
+          <p>
+            The required yarn length for your project is:
+            <span id="project-yarn-length" class="result"> 0 </span>
+          </p>
+          <p>
+            Which is equal to
+            <span id="number-of-skeins" class="result"> 0 </span> number of
+            skeins in selected yarn type.
+          </p>
+        </div>
+        <!-- Increase/Decrease-->
+        <div class="calc-section" id="increase-decrease-section">
+          <form>
+            <fieldset>
+              <legend>How to evenly increase or decrease</legend>
+              <label for="current-stitch-count"
+                >Your current number of stitches: </label
+              ><input type="number" id="current-stitch-count" required />
+              <br />
+              <label for="stitches-to-increase-decrease"
+                >Number of stitches to increase/decrease: </label
+              ><input
+                type="number"
+                id="stitches-to-increase-decrease"
+                required
+              />
+              <br />
+              <button id="btn-calc-increase-decrease">
+                Calculate increase/decrease
+              </button>
+            </fieldset>
+          </form>
+          <p>
+            Increase/decrease every<span
+              id="evenly-increase-decrease"
+              class="result"
+            >
+              0
+            </span>
+            stitches.
+          </p>
+        </div>
+      </section>
+      <!-- Modals -->
+      <section id="modal-gauge" class="modal black-bkgr">
+        <div>
+          <h3>Calculate your gauge</h3>
+          <span class="close-modal" onclick="closeModalGauge()">x</span>
+        </div>
+        <div>
+          <p>
+            Knitting a swatch to calculate your gauge is an important step when
+            working on a knitting project, especially if you want your finished
+            piece to have the correct size and fit. Use the same yarn and size
+            of knitting needles you plan to use for your project. Begin by
+            casting on a certain number of stitches. Typically, this is around
+            20-30 stitches.
+          </p>
+          <p>
+            After knitting several rows, you'll want to measure your swatch. Lay
+            it flat and use a measuring tape or ruler to measure the number of
+            stitches across (horizontally) and the number of rows (vertically)
+            within a 4-inch (10 cm) square. To calculate your gauge, you'll need
+            to count how many stitches you have per 4 inches horizontally and
+            how many rows per 4 inches vertically. For example, if you have 20
+            stitches and 28 rows in 4 inches, your gauge would be 20 stitches
+            and 28 rows per 4 inches.
+          </p>
+          <p>
+            If your gauge does not match the gauge specified in the pattern, you
+            may need to adjust your needle size. If your swatch has more
+            stitches per 4 inches than the pattern specifies, try larger
+            needles. If it has fewer stitches, try smaller needles. Knit another
+            swatch with the adjusted needles and measure again until you achieve
+            the correct gauge.
+          </p>
+        </div>
+      </section>
 
-        <section id="modal-cast-on" class="modal black-bkgr">
-            <div>
-                <h3>Calculate how many stitches to cast-on</h3><span class="close-modal" onclick="closeModalCastOn()">x</span>
-                </div>
-                <p>To calculate how many stitches to cast on for a knitting project, you'll need to consider your gauge and the desired
-                width of your project. Here's a step-by-step guide to help you determine the number of stitches to cast on:
-                Round to the Nearest Whole Number: If your calculation doesn't result in a whole number, round to the nearest whole
-                number. In knitting, you can't cast on a fraction of a stitch, so round up or down to the nearest whole stitch as
-                needed.
-                </p>
-                <p>
-                Remember that achieving the correct gauge is crucial for your project to turn out as expected. If your gauge swatch
-                doesn't match the gauge specified in your pattern, you may need to adjust your needle size and knit another swatch until
-                you achieve the correct gauge. Always knit a gauge swatch before starting a new project to ensure your finished item
-                will be the right size.
-                </p>
-            </div>
-        </section>
+      <section id="modal-cast-on" class="modal black-bkgr">
+        <div>
+          <h3>Calculate how many stitches to cast-on</h3>
+          <span class="close-modal" onclick="closeModalCastOn()">x</span>
+        </div>
+        <div>
+          <p>
+            To calculate how many stitches to cast on for a knitting project,
+            you'll need to consider your gauge and the desired width of your
+            project. Here's a step-by-step guide to help you determine the
+            number of stitches to cast on: Round to the Nearest Whole Number: If
+            your calculation doesn't result in a whole number, round to the
+            nearest whole number. In knitting, you can't cast on a fraction of a
+            stitch, so round up or down to the nearest whole stitch as needed.
+          </p>
+          <p>
+            Remember that achieving the correct gauge is crucial for your
+            project to turn out as expected. If your gauge swatch doesn't match
+            the gauge specified in your pattern, you may need to adjust your
+            needle size and knit another swatch until you achieve the correct
+            gauge. Always knit a gauge swatch before starting a new project to
+            ensure your finished item will be the right size.
+          </p>
+        </div>
+      </section>
 
-        <section id="modal-yarn" class="modal black-bkgr ">
-            <div>
-                <h3>Calculate the amount of yarn needed</h3><span class="close-modal" onclick="closeModalYarn()">x</span>
-                <p>To calculate how much yarn you'll need for a knitting project, you'll need to consider several factors, including the
-                type of yarn, your gauge, the size of the project, and any specific pattern instructions.</p>
-            </div>
-        </section>
+      <section id="modal-yarn" class="modal black-bkgr">
+        <div>
+          <h3>Calculate the amount of yarn needed</h3>
+          <span class="close-modal" onclick="closeModalYarn()">x</span>
+          <p>
+            To calculate how much yarn you'll need for a knitting project,
+            you'll need to consider several factors, including the type of yarn,
+            your gauge, the size of the project, and any specific pattern
+            instructions.
+          </p>
+        </div>
+      </section>
 
-        <section id="modal-increase-decrease" class="modal black-bkgr ">
-            <div>
-                <h3>Calculate increases and decreases</h3><span class="close-modal" onclick="closeModalIncreseDecrease()">x</span>
-                <p>Keep in mind that the type of increase or decrease you use (e.g., knit/purl increases, knit2tog, SSK for decreases) and
-                the specific pattern you're following can affect how you calculate and execute them. Always refer to your pattern's
-                instructions for any specific increase or decrease methods and placement guidelines.</p>
-            </div>
-        </section>
-
+      <section id="modal-increase-decrease" class="modal black-bkgr">
+        <div>
+          <h3>Calculate increases and decreases</h3>
+          <span class="close-modal" onclick="closeModalIncreseDecrease()"
+            >x</span
+          >
+          <p>
+            Keep in mind that the type of increase or decrease you use (e.g.,
+            knit/purl increases, knit2tog, SSK for decreases) and the specific
+            pattern you're following can affect how you calculate and execute
+            them. Always refer to your pattern's instructions for any specific
+            increase or decrease methods and placement guidelines.
+          </p>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <ul id="social-media">
-            <li>
-                <a href="https://www.instagram.com" target="_blank" rel="noopener"
-                        aria-label="Follow me on Instagram (opens in new tab)"><i class="fa-brands fa-instagram"></i></a>
-            </li>
-            <li>
-                <a href="https://www.ravelry.com" target="_blank" rel="noopener"
-                        aria-label="Follow me on Ravelry (opens in new tab)"><i class="fa-brands fa-ravelry"></i></a>
-            </li>
-            <li>
-                <a href="https://www.pinterest.com" target="_blank" rel="noopener"
-                        aria-label="Follow me on Pinterest (opens in new tab)"><i class="fa-brands fa-pinterest"></i></a>
-            </li>
-            <li>
-                <a href="mailto: charlotta@grundmann.se" target="_blank" rel="noopener"
-                        aria-label="Send me an email (opens in new tab)"><i class="fa-solid fa-at"></i></a>
-            </li>
-        </ul>
-        <p id="copyright">© - Charlotta Grundmann - 2023</p>
+      <ul id="social-media">
+        <li>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Follow me on Instagram (opens in new tab)"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.ravelry.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Follow me on Ravelry (opens in new tab)"
+            ><i class="fa-brands fa-ravelry"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.pinterest.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Follow me on Pinterest (opens in new tab)"
+            ><i class="fa-brands fa-pinterest"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="mailto:charlotta@grundmann.se"
+            target="_blank"
+            rel="noopener"
+            aria-label="Send me an email (opens in new tab)"
+            ><i class="fa-solid fa-at"></i
+          ></a>
+        </li>
+      </ul>
+      <p id="copyright">© - Charlotta Grundmann - 2023</p>
     </footer>
-    
+
     <!-- Font Awesome Kit -->
-    <script src="https://kit.fontawesome.com/5fb4272d56.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/5fb4272d56.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Javascript source -->
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
