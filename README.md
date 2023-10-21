@@ -7,12 +7,9 @@ Welcome to the Knit Calculator website, the go-to resource for all things knitti
 
 -   Purpose and target audience
     -  User stories
--   Design
-    -   Color palette
-    -  	Typography
-    -   Wireframes
-    -   Imagery
-    -   Icons
+-   Design and usability
+    -  Color palette
+    -  Typography
 -   Functionality
 -   Future development
 -   Bug fixes
@@ -46,3 +43,26 @@ The target audience is obviously knitters, no matter the experience level, you n
   **As a budget-conscious crafter**, I require the yarn substitution feature in the knit calculator to help me select alternative yarns while ensuring that the new yarn's characteristics match the original pattern's requirements.
     
   **As a frequent pattern user**, I need a yarn weight conversion tool to easily switch between different yarn weight classifications, making it simpler to use patterns from various sources.
+
+
+  ## Design and usability
+The website has been thoughtfully designed with a mobile-first approach, recognizing that users will likely use it as a handy tool during their knitting activities. The primary emphasis is on calculations, featuring prominently sized buttons that allow users to easily navigate to their desired information or calculations. Results have been purposefully designed to stand out, ensuring effortless visibility, especially on smaller mobile screens.
+
+The color palette has been carefully chosen to offer excellent contrast, enabling users to focus on the most essential elements. Additionally, a black opacity background has been applied to frame different calculations, providing added clarity to distinguish information related to each specific calculation.
+
+To facilitate user decision-making, all calculations are displayed right from the start, allowing users to quickly determine if the site offers the calculations they require. To streamline the user experience and reduce the number of inputs, the calculations intelligently retrieve answers from previous calculations, eliminating the need for users to repetitively enter information they've already provided.
+
+### Color palette
+
+**Buttons and modal windows**
+![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/a254c9ab-b84d-4a53-a135-2cd86d85acb7)
+
+[Contrast checker](https://webaim.org/resources/contrastchecker/?fcolor=000000&bcolor=FFA500)
+
+### Typography
+The Patrick Hand font was chosen for the logo to evoke a creative and crafty aesthetic.
+For the body copy, a sans-serif font, Raleway, has been selected to maintain a tranquil and serene atmosphere.
+
+
+
+
