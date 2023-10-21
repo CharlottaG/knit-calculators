@@ -61,7 +61,10 @@ To facilitate user decision-making, all calculations are displayed right from th
 
 ### Typography
 The Patrick Hand font was chosen for the logo to evoke a creative and crafty aesthetic.
+![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/c99ef29a-fd8d-429c-90ae-e1c522d48314)
+
 For the body copy, a sans-serif font, Raleway, has been selected to maintain a tranquil and serene atmosphere.
+![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/d63b796a-1908-463e-ac45-10d1be98c64a)
 
 ### Icons
 
