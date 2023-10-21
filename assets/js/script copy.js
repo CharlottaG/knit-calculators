@@ -42,12 +42,8 @@ btnCalcGauge.addEventListener('click', () => {
     var userSwatchRows = document.getElementById('user-swatch-rows').value;
     var num1 = 10;
 
-    if (userSwatchStitches === '' && userSwatchRows === '') {
-        alert('Oops! You need to fill in the numer of stitches and rows first. We need that information in this calculation.');
-            } else {
-        stitchesPerCm(userSwatchStitches, num1);
-        rowsPerCm(userSwatchRows, num1);
-            }
+    stitchesPerCm(userSwatchStitches, num1);
+    rowsPerCm(userSwatchRows, num1);
 });
 
 function stitchesPerCm(userSwatchStitches, num1) {
@@ -69,8 +65,6 @@ btnCalcCastOn.addEventListener('click', () => {
 
     if (parseInt(numberOfStitchesPerCm) === 0 && parseInt(numberOfRowsPerCm) === 0) {
         alert('Oops! You need to complete previous calculation first. We need that result in this calculation.');
-    } else if (desiredWidth === '' && desiredLength === '') {
-            alert('Oops! You need to fill in the desired width and length first. We need that information in this calculation.');
     } else {
         calcStitchesToCastOn(desiredWidth, numberOfStitchesPerCm);
         calcRowsToKnit(desiredLength, numberOfRowsPerCm);
@@ -101,8 +95,6 @@ btnCalcYarn.addEventListener('click', () => {
 
     if (parseInt(stitchesToCastOn) === 0 && parseInt(rowsToKnit) === 0) {
         alert('Oops! You need to complete previous calculation first. We need that result in this calculation.');
-    } else if (skeinLength === '') {
-        alert('Oops! You need to fill in the length of the selected skein. We need that information in this calculation.');
     } else {
         document.getElementById('number-of-skeins').innerHTML = numberOfSkeins.toFixed(1);
     }
@@ -116,11 +108,8 @@ btnCalcIncreseDecrease.addEventListener('click', () => {
     var currentStitches = document.getElementById('current-stitch-count').value;
     var stitchesToIncreaseDecrease = document.getElementById('stitches-to-increase-decrease').value;
 
-    if (currentStitches === '' && stitchesToIncreaseDecrease === '') {
-    alert('Oops! You need to fill in the current stitch count and the number to increase or decrease first. We need that information in this calculation.');
-        } else {
-        calcIncreseDecrease(currentStitches, stitchesToIncreaseDecrease);
-        }
+    calcIncreseDecrease(currentStitches, stitchesToIncreaseDecrease);
+
 });
 
 function calcIncreseDecrease(currentStitches, stitchesToIncreaseDecrease) {
