@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Knitting calculators to ease your knitting process."
-   >
+    />
     <meta
       name="keywords"
       content="Knitting, Calculator, Calculations, Knit Calculator, Knit Calculations, Increase, Decrease, Gauge, Cast-on "
-   >
-    <meta name="author" content="Charlotta Grundmann">
-    <link rel="stylesheet" href="assets/css/style.css">
+    />
+    <meta name="author" content="Charlotta Grundmann" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Knit Calculators</title>
     <link
       rel="icon"
       type="image/x-icon"
       href="assets/images/favicons/favicon.ico"
-   >
+    />
   </head>
   <body>
     <!-- Header -->
@@ -58,12 +58,12 @@
           <h5>Stitches/rows per cm</h5>
           <label for="user-swatch-stitches"
             >Number of <u>stitches</u> within 10x10 cm: </label
-          ><input type="number" id="user-swatch-stitches" required>
-          <br>
+          ><input type="number" id="user-swatch-stitches" required />
+          <br />
           <label for="user-swatch-rows"
             >Number of <u>rows</u> within 10x10 cm: </label
-          ><input type="number" id="user-swatch-rows" required>
-          <br>
+          ><input type="number" id="user-swatch-rows" required />
+          <br />
           <button id="btn-calc-gauge">Calculate!</button>
           <p>
             Stitches/cm:
@@ -80,14 +80,16 @@
               calculation to work!</em
             >
           </p>
-          <br>
+          <br />
           <label for="desired-width">Enter desired width: </label
-          ><input type="number" id="desired-width" required>
-          <br>
+          ><input type="number" id="desired-width" required />
+          <br />
           <label for="desired-length">Enter desired length: </label
-          ><input type="number" id="desired-length" required>
-          <br>
-          <button id="btn-calc-cast-on" class="calc-done-check">Calculate!</button>
+          ><input type="number" id="desired-length" required />
+          <br />
+          <button id="btn-calc-cast-on" class="calc-done-check">
+            Calculate!
+          </button>
           <p>
             Stitches to cast&#8209;on:
             <span id="stitches-to-cast-on" class="result"> 0 </span>
@@ -103,31 +105,36 @@
               order for the calculation to work!
             </em>
           </p>
-          <br>
-          <label for="skein-length">Enter the length/skein (m) of the chosen yarn: </label
-          ><input type="number" id="skein-length" required>
-          <br>
+          <br />
+          <label for="skein-length"
+            >Enter the length/skein (m) of the chosen yarn: </label
+          ><input type="number" id="skein-length" required />
+          <br />
           <button id="btn-calc-yarn" class="calc-done-check">Calculate!</button>
           <p>
             You need
             <span id="number-of-skeins" class="result"> 0 </span> number of
             skeins of selected yarn type.
           </p>
-        <div class="explanation">
-            <p>This calculation assumes that for each stitch and row, you'll use 3 centimeters of yarn. Which is somewhere inbetween fingering weight yarn and bulky yarn.</p>
-        </div>
+          <div class="explanation">
+            <p>
+              This calculation assumes that for each stitch and row, you'll use
+              3 centimeters of yarn. Which is somewhere inbetween fingering
+              weight yarn and bulky yarn.
+            </p>
+          </div>
         </div>
         <!-- Increase/Decrease-->
         <div class="calc-section" id="increase-decrease-section">
           <h5>Evenly increase or decrease</h5>
           <label for="current-stitch-count"
             >Your current number of stitches: </label
-          ><input type="number" id="current-stitch-count" required>
-          <br>
+          ><input type="number" id="current-stitch-count" required />
+          <br />
           <label for="stitches-to-increase-decrease"
             >Number of stitches to increase/decrease: </label
-          ><input type="number" id="stitches-to-increase-decrease" required>
-          <br>
+          ><input type="number" id="stitches-to-increase-decrease" required />
+          <br />
           <button id="btn-calc-increase-decrease">Calculate!</button>
           <p>
             Increase/decrease every<span
@@ -138,56 +145,78 @@
             </span>
             stitches.
           </p>
-            <div class="explanation">
-            <p>If you get a number with a decimal (like 5.8), round it to the nearest whole number or half. If it's a half (like 5.5),
-            do the following:
+          <div class="explanation">
+            <p>
+              If you get a number with a decimal (like 5.8), round it to the
+              nearest whole number or half. If it's a half (like 5.5), do the
+              following:
             </p>
-            <br>
-            <p class="indent"><strong>First time:</strong> Knit the rounded-down number (which is 5 stitches).</p>
-            <br>
-            <p class="indent"><strong>Next time:</strong> Knit the rounded-up number (which is 6 stitches).</p>
-            <br>
-            <p>This way, you keep it even by adding one stitch every other time.</p>
-            </div>
+            <br />
+            <p class="indent">
+              <strong>First time:</strong> Knit the rounded-down number (which
+              is 5 stitches).
+            </p>
+            <br />
+            <p class="indent">
+              <strong>Next time:</strong> Knit the rounded-up number (which is 6
+              stitches).
+            </p>
+            <br />
+            <p>
+              This way, you keep it even by adding one stitch every other time.
+            </p>
+          </div>
         </div>
       </section>
 
       <!-- Modals -->
       <section id="modal-gauge" class="modal black-bkgr">
         <div class="modal-heading">
-          <h5>Calculate your gauge</h5><span class="close-modal" onclick="closeModalGauge()"> X</span>
+          <h5>Calculate your gauge</h5>
+          <span class="close-modal" onclick="closeModalGauge()"> X</span>
         </div>
         <div>
-            <p><strong>Step 1: Cast On</strong><br>
-                Cast on a specific number of stitches, typically around 20-30 stitches. This forms the foundation of your swatch.
-            </p>
-            <p><strong>Step 2: Knit Rows</strong><br>
-                Knit several rows, creating a small piece of fabric. Make sure to use the same stitch pattern you intend for your
-                project.
-            </p>
-            <p><strong>Step 3: Measure Your Swatch</strong><br>
-                Lay your swatch flat on a surface.
-                Use a measuring tape or ruler to measure the number of stitches across (horizontally) and the number of rows
-                (vertically) within a 10 cm square.
-            </p>
-            <p><strong>Step 4:Calculate Your Gauge</strong><br>
-                Calculate how many stitches you have per 10 cm horizontally and how many rows per 10 cm vertically. For example, if you
-                have 20 stitches and 28 rows in 10 cm, your gauge would be 20 stitches and 28 rows per 10 cm.
-            </p>
-            <p><strong>Step 5: Adjust Needle Size</strong><br>
-                If your gauge doesn't match the pattern, you may need to adjust your needle size.
-                If you have more stitches per 10 cm than the pattern specifies, try using larger needles.
-                If you have fewer stitches, use smaller needles.
-            </p>
-            <p>
-                By following these steps, you'll quickly determine your gauge and achieve the desired results for your knitting project.
-            </p>
+          <p>
+            <strong>Step 1: Cast On</strong><br />
+            Cast on a specific number of stitches, typically around 20-30
+            stitches. This forms the foundation of your swatch.
+          </p>
+          <p>
+            <strong>Step 2: Knit Rows</strong><br />
+            Knit several rows, creating a small piece of fabric. Make sure to
+            use the same stitch pattern you intend for your project.
+          </p>
+          <p>
+            <strong>Step 3: Measure Your Swatch</strong><br />
+            Lay your swatch flat on a surface. Use a measuring tape or ruler to
+            measure the number of stitches across (horizontally) and the number
+            of rows (vertically) within a 10 cm square.
+          </p>
+          <p>
+            <strong>Step 4:Calculate Your Gauge</strong><br />
+            Calculate how many stitches you have per 10 cm horizontally and how
+            many rows per 10 cm vertically. For example, if you have 20 stitches
+            and 28 rows in 10 cm, your gauge would be 20 stitches and 28 rows
+            per 10 cm.
+          </p>
+          <p>
+            <strong>Step 5: Adjust Needle Size</strong><br />
+            If your gauge doesn't match the pattern, you may need to adjust your
+            needle size. If you have more stitches per 10 cm than the pattern
+            specifies, try using larger needles. If you have fewer stitches, use
+            smaller needles.
+          </p>
+          <p>
+            By following these steps, you'll quickly determine your gauge and
+            achieve the desired results for your knitting project.
+          </p>
         </div>
       </section>
 
       <section id="modal-cast-on" class="modal black-bkgr">
         <div class="modal-heading">
-            <h5>Calculate stitches to cast&#8209;on</h5><span class="close-modal" onclick="closeModalCastOn()"> X</span>
+          <h5>Calculate stitches to cast&#8209;on</h5>
+          <span class="close-modal" onclick="closeModalCastOn()"> X</span>
         </div>
         <div>
           <p>
@@ -207,34 +236,88 @@
             gauge. Always knit a gauge swatch before starting a new project to
             ensure your finished item will be the right size.
           </p>
+          <h6>Cast-on methods:</h6>
+            <p><strong>Long-Tail Cast-On:</strong> A versatile and commonly used method that creates a neat, elastic edge.</p>
+            <p><strong>Knitted Cast-On:</strong> A simple and quick cast-on method that is less elastic compared to the long-tail cast-on.</p>
+            <p><strong>Provisional Cast-On:</strong> Used to create live stitches that can be unraveled later, often for seamless, joined pieces.</p>
+            <p><strong>Italian Cast-On:</strong> A specialty cast-on technique with a unique appearance and texture.</p>
+            <p><strong>Tubular Cast-On:</strong> A method that creates a stretchy, seamless edge suitable for ribbing and cuffs.</p>
         </div>
       </section>
 
       <section id="modal-yarn" class="modal black-bkgr">
         <div class="modal-heading">
-            <h5>Calculate skeins needed</h5><span class="close-modal" onclick="closeModalYarn()"> X</span>
+          <h5>Calculate skeins needed</h5>
+          <span class="close-modal" onclick="closeModalYarn()"> X</span>
         </div>
-          <p>
-            To calculate how much yarn you'll need for a knitting project,
-            you'll need to consider several factors, including the type of yarn,
-            your gauge, the size of the project, and any specific pattern
-            instructions.
-          </p>
-        </div>
+        <p>
+          To calculate how much yarn you'll need for a knitting project, you'll
+          need to consider several factors, including the type of yarn, your
+          gauge, the size of the project, and any specific pattern instructions.
+        </p>
+        <h6>Yarn types:</h6>
+        <p><strong>Fingering Weight Yarn:</strong> The lightest, ideal for delicate projects
+            like lace shawls.</p>
+        <p><strong>DK (Double Knitting) Weight Yarn:</strong> Versatile, suitable for sweaters
+            and baby clothes.</p>
+            <p><strong> Worsted Weight Yarn: Medium-weight, great for sweaters and scarves.</p>
+        <p><strong>Bulky Weight Yarn:</strong> Thicker, perfect for quick-knit projects.</p>
+        <p><strong>Super Bulky Weight Yarn:</strong> Heaviest, for ultra-warm and cozy items.</p>
       </section>
 
       <section id="modal-increase-decrease" class="modal black-bkgr">
         <div class="modal-heading">
-            <h5>Calculate increases and decreases</h5><span class="close-modal" onclick="closeModalIncreseDecrease()"> X</span>
+          <h5>Calculate increases and decreases</h5>
+          <span class="close-modal" onclick="closeModalIncreseDecrease()">
+            X</span
+          >
         </div>
-          <p>
-            Keep in mind that the type of increase or decrease you use (e.g.,
-            knit/purl increases, knit2tog, SSK for decreases) and the specific
-            pattern you're following can affect how you calculate and execute
-            them. Always refer to your pattern's instructions for any specific
-            increase or decrease methods and placement guidelines.
-          </p>
-        </div>
+        <p>
+          Keep in mind that the type of increase or decrease you use (e.g.,
+          knit/purl increases, knit2tog, SSK for decreases) and the specific
+          pattern you're following can affect how you calculate and execute
+          them. Always refer to your pattern's instructions for any specific
+          increase or decrease methods and placement guidelines.
+        </p>
+        <h6>Common increase methods:</h6>
+        <p>
+          <strong>Knit Front and Back (KFB):</strong> To increase a stitch, knit
+          into the front of a stitch as usual, but before sliding it off the
+          left needle, knit into the back of the same stitch. This creates two
+          stitches from one.
+        </p>
+        <p>
+          <strong>Yarn Over (YO):</strong> A yarn over is a simple increase
+          where you bring the yarn to the front of your work, then simply wrap
+          it over the right-hand needle before knitting the next stitch. This
+          creates an extra stitch and a small hole.
+        </p>
+        <p>
+          <strong>Make One (M1):</strong> This is a method to increase without
+          leaving a hole. There are various M1 methods, such as M1L (Make 1
+          Left) and M1R (Make 1 Right), each involving picking up a strand of
+          yarn between two stitches and knitting it.
+        </p>
+        <h6>Common decrease methods:</h6>
+        <p>
+          <strong> Knit Two Together (K2TOG):</strong> To decrease a stitch,
+          simply knit two stitches together as if they were one. This is a
+          right-leaning decrease.
+        </p>
+        <p>
+          <strong>Slip, Slip, Knit (SSK):</strong> Slip two stitches knitwise,
+          then insert the left needle into the front of both slipped stitches
+          and knit them together. This is a left-leaning decrease.
+        </p>
+        <p>
+          <strong>Purl Two Together (P2TOG):</strong> For purl stitches, you can
+          decrease by purling two stitches together.
+        </p>
+        <p>
+          <strong>Central Double Decrease (CDD):</strong> This decrease method
+          is used in lace knitting. Slip two stitches together knitwise, knit
+          one stitch, then pass the two slipped stitches over the knit stitch.
+        </p>
       </section>
     </main>
 

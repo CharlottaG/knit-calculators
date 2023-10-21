@@ -49,6 +49,11 @@ h5 {
     color: white;
 }
 
+h6 {
+    font-size: 1.2rem;
+        margin: 10px 0px;
+}
+
 label {
     font-weight: 600;
 }
@@ -185,6 +190,7 @@ em {
     align-items: baseline;
 }
 
+
 /* Footer */
 footer {
     background-color: black;
@@ -223,9 +229,10 @@ footer {
     }
 
     .modal {
-        top: 300px;
-        width: 40%;
-        max-height: auto;
+        top: 100px;
+        width: 60%;
+        max-height: 600px;
+        overflow: auto;
     }
 }
 
@@ -234,5 +241,12 @@ footer {
 
     main {
         padding: 5% 25%;
+    }
+    
+    .modal {
+        top: 100px;
+        width: 50%;
+        max-height: 600px;
+        overflow: auto;
     }
 }
