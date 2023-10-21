@@ -133,7 +133,7 @@ em {
 
 .explanation {
     margin-top: 25px;
-    line-height: 1.1;
+    line-height: 1.2;
     font-size: 0.8;
     border: 1px dotted white;
     padding: 7px;
@@ -215,16 +215,24 @@ footer {
     margin: 5px;
 }
 
-/* For screens larger than 600px */
-@media only screen and (min-width:600px) {
+/* For screens larger than 1000px */
+@media only screen and (min-width:1000px) {
 
     main {
-        padding: 5% 30%;
+        padding: 5% 20%;
     }
 
     .modal {
         top: 300px;
         width: 40%;
         max-height: auto;
+    }
+}
+
+/* For screens larger than 1366px */
+@media only screen and (min-width:1366px) {
+
+    main {
+        padding: 5% 25%;
     }
 }
