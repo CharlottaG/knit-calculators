@@ -83,6 +83,15 @@ Building on the user stories, there are additional calculations that can be inco
 3.  **Yarn substitution (different weight)** - calculating the consequences of selecting a different type of yarn with varying weight.
 4.  **Size conversion** - simplifying the process of adjusting a project's size to align with user-specific requirements.
 
+## Bug fixes
+**The cast-on calculation showed NaN as the result**: The issue was that the function called the *value* of the above calculated answer which was fixed by calling the *textContent* instead, within the html span element.
+![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/d82cfb74-0276-4013-b1eb-482bccbd022d)
+
+**The results showed all decimals, where only one is needed**: This was solved by using the *toFixed(1)* at the end of the calculation.
+![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/c5556111-a7ed-4376-a3be-b9e0de752821)
+
+
+
 
 
 
