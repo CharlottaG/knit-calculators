@@ -52,10 +52,10 @@
       </section>
       <!-- User input section -->
       <section id="user-input" class="input-box">
-        <h3>Calculators</h3>
+        <h4>Calculators</h4>
         <!-- Swatch-->
         <div class="calc-section">
-          <h3>Stitches/rows per cm</h3>
+          <h5>Stitches/rows per cm</h5>
           <label for="user-swatch-stitches"
             >Number of <u>stitches</u> within 10x10 cm: </label
           ><input type="number" id="user-swatch-stitches" required>
@@ -73,7 +73,7 @@
         </div>
         <!-- Cast-on-->
         <div class="calc-section" id="cast-on-section">
-          <h3>Number of stitches to cast-on</h3>
+          <h5>Stitches to cast&#8209;on</h5>
           <p>
             <em>
               You need to fill in the swatch fields above in order for the
@@ -89,14 +89,14 @@
           <br>
           <button id="btn-calc-cast-on" class="calc-done-check">Calculate!</button>
           <p>
-            Stitches to cast-on:
+            Stitches to cast&#8209;on:
             <span id="stitches-to-cast-on" class="result"> 0 </span>
           </p>
           <p>Rows to knit: <span id="rows-to-knit" class="result"> 0 </span></p>
         </div>
         <!-- Yarn-->
         <div class="calc-section" id="yarn-section">
-          <h3>How many skeins you need</h3>
+          <h5># of skeins</h5>
           <p>
             <em>
               You need to fill in the desired width and length fields above in
@@ -119,7 +119,7 @@
         </div>
         <!-- Increase/Decrease-->
         <div class="calc-section" id="increase-decrease-section">
-          <h3>How to evenly increase or decrease</h3>
+          <h5>Evenly increase or decrease</h5>
           <label for="current-stitch-count"
             >Your current number of stitches: </label
           ><input type="number" id="current-stitch-count" required>
@@ -155,7 +155,7 @@
       <!-- Modals -->
       <section id="modal-gauge" class="modal black-bkgr">
         <div class="modal-heading">
-          <h3>Calculate your gauge</h3><span class="close-modal" onclick="closeModalGauge()"> X</span>
+          <h5>Calculate your gauge</h5><span class="close-modal" onclick="closeModalGauge()"> X</span>
         </div>
         <div>
             <p><strong>Step 1: Cast On</strong><br>
@@ -187,7 +187,7 @@
 
       <section id="modal-cast-on" class="modal black-bkgr">
         <div class="modal-heading">
-            <h3>Calculate stitches to cast-on</h3><span class="close-modal" onclick="closeModalCastOn()"> X</span>
+            <h5>Calculate stitches to cast&#8209;on</h5><span class="close-modal" onclick="closeModalCastOn()"> X</span>
         </div>
         <div>
           <p>
@@ -212,7 +212,7 @@
 
       <section id="modal-yarn" class="modal black-bkgr">
         <div class="modal-heading">
-            <h3>Calculate skeins needed</h3><span class="close-modal" onclick="closeModalYarn()"> X</span>
+            <h5>Calculate skeins needed</h5><span class="close-modal" onclick="closeModalYarn()"> X</span>
         </div>
           <p>
             To calculate how much yarn you'll need for a knitting project,
@@ -225,7 +225,7 @@
 
       <section id="modal-increase-decrease" class="modal black-bkgr">
         <div class="modal-heading">
-            <h3>Calculate increases and decreases</h3><span class="close-modal" onclick="closeModalIncreseDecrease()"> X</span>
+            <h5>Calculate increases and decreases</h5><span class="close-modal" onclick="closeModalIncreseDecrease()"> X</span>
         </div>
           <p>
             Keep in mind that the type of increase or decrease you use (e.g.,
