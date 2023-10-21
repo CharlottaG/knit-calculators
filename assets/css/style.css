@@ -115,7 +115,7 @@ em {
     padding: 20px;
 }
 
-#explanation {
+.explanation {
     margin-top: 25px;
     line-height: 1.1;
     font-size: 0.8;
