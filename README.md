@@ -138,6 +138,18 @@ To ensure optimal accessibility for all users, regardless of their internet conn
 
 **Optimized Images**: To boost site performance, the background image have been converted to the WebP format. This format offers superior compression without compromising image quality, resulting in a faster and more efficient user experience.
 
+## Deployment
+
+The Knit Calculators site was deployed to [GitHub](https://github.com) pages, following these steps:
+
+1. Go to the [knit-calculators-repository](https://github.com/CharlottaG/knit-calculators)
+2. Go to the *Settings* tab (top left in the menu)
+3. Go to the left-hand section,under *Code and automation* click **Pages**.
+4. Go to *Source* under *Build and deployment* and use the dropdown menu to choose **Deploy from a branch**
+5. Under *Branch* use the dropdown menu to select **main** and set the *folder* to **root**.
+
+The live site can be viewed at: [https://charlottag.github.io/knit-calculators](https://charlottag.github.io/knit-calculators)
+
 
 
 
