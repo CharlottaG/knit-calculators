@@ -63,6 +63,17 @@ To facilitate user decision-making, all calculations are displayed right from th
 The Patrick Hand font was chosen for the logo to evoke a creative and crafty aesthetic.
 For the body copy, a sans-serif font, Raleway, has been selected to maintain a tranquil and serene atmosphere.
 
+### Icons
+
+Icons used come from Font Awesome
+
+- Instagram
+- Ravelry
+- Pinterest
+- Contact/Mail to
+
+Fav icon used for the tab image comes from [Vector Stock](https://www.vectorstock.com/royalty-free-vector/yarn-ball-icon-vector-17150800) and was generated through [Favicon](https://favicon.io/) to get all the versions supported by the different browsers.
+
 ## Functionality
 
 The site incorporates (at this point) four calculations to assist knitters in various aspects of their projects:
