@@ -43,6 +43,7 @@ input {
     margin-bottom: 15px;
 }
 
+
 /* Header */
 header {
     background-color: orange;
@@ -115,13 +116,19 @@ em {
     display: none;
     position: fixed;
     z-index: 1;
-    top: 200px;
+    top: 100px;
     width: 80%;
     height: auto;
     overflow: auto;
     background-color: orange;
     padding: 20px;
     color: black;
+}
+
+.modal p {
+    padding-bottom: 10px;
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 .modal-button {
@@ -132,8 +139,18 @@ em {
 
 .close-modal {
     font-weight: 600;
-    font-size: 150%;
+    font-size: 200%;
     padding: 5px;
+    background-color: #f5d49c;
+    border-radius: 5px;
+}
+
+.modal-heading {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 /* Footer */
