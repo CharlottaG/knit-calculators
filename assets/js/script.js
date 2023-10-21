@@ -117,22 +117,22 @@ function divide(num1, num2) {
     return num1 / num2;
 }
 
-//Close Gauge modal
+//Close Gauge modal (function used in html)
 function closeModalGauge() {
     modalGauge.style.display = 'none';
 }
 
-//Close Cast-on modal
+//Close Cast-on modal (function used in html)
 function closeModalCastOn() {
     modalCastOn.style.display = 'none';
 }
 
-//Close Yarn modal
+//Close Yarn modal (function used in html)
 function closeModalYarn() {
     modalYarn.style.display = 'none';
 }
 
-//Close Increade/Decrease modal
+//Close Increade/Decrease modal (function used in html)
 function closeModalIncreseDecrease() {
     modalIncreseDecrease.style.display = 'none';
 }

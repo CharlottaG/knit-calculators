@@ -5,7 +5,8 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;;
+    box-sizing: border-box;
+    ;
 }
 
 /* Global styling */
@@ -15,7 +16,8 @@ body {
     flex-direction: column;
     position: relative;
     font-family: 'Raleway', sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    line-height: 1.3;
     color: white;
 }
 
@@ -59,7 +61,8 @@ main {
     flex: 1 0 auto;
     margin-top: 70px;
     background: -webkit-linear-gradient(rgba(21, 1, 8, 0.6), rgba(116, 115, 117, 0.3)),
-        url(../images/background.webp) no-repeat center center/cover;;
+        url(../images/background.webp) no-repeat center center/cover;
+    ;
     padding: 10%;
 }
 
@@ -102,14 +105,27 @@ div {
 }
 
 em {
-    background-color: rgba(255, 165,0, 0.6);
+    background-color: rgba(255, 165, 0, 0.6);
     font-style: normal;
 }
 
 .calc-section {
     background-color: rgba(21, 1, 8, 0.6);
-    margin-bottom: 25px;
+    margin: 10px 5px;
     padding: 20px;
+}
+
+#explanation {
+    margin-top: 25px;
+    line-height: 1.1;
+    font-size: 0.8;
+    border: 1px dotted white;
+    padding: 7px;
+    border-radius: 5px;;
+}
+
+.indent {
+    text-indent: 15px;
 }
 
 .modal {
@@ -118,7 +134,7 @@ em {
     z-index: 1;
     top: 100px;
     width: 80%;
-    height: auto;
+    max-height: 700px;
     overflow: auto;
     background-color: orange;
     padding: 20px;
@@ -187,11 +203,12 @@ footer {
 @media only screen and (min-width:600px) {
 
     main {
-        padding: 5% 20%;
-
+        padding: 5% 30%;
     }
+
     .modal {
-            top: 300px;
-            width:50%;
-        }
+        top: 300px;
+        width: 40%;
+        max-height: auto;
+    }
 }

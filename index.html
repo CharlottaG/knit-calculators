@@ -135,8 +135,20 @@
             </span>
             stitches.
           </p>
+            <div id="explanation">
+            <p>If you get a number with a decimal (like 5.8), round it to the nearest whole number or half. If it's a half (like 5.5),
+            do the following:
+            </p>
+            <br>
+            <p class="indent"><strong>First time:</strong> Knit the rounded-down number (which is 5 stitches).</p>
+            <br>
+            <p class="indent"><strong>Next time:</strong> Knit the rounded-up number (which is 6 stitches).</p>
+            <br>
+            <p>This way, you keep it even by adding one stitch every other time.</p>
+            </div>
         </div>
       </section>
+
       <!-- Modals -->
       <section id="modal-gauge" class="modal black-bkgr">
         <div class="modal-heading">
@@ -171,9 +183,8 @@
       </section>
 
       <section id="modal-cast-on" class="modal black-bkgr">
-        <div>
-          <h3>Calculate how many stitches to cast-on</h3>
-          <span class="close-modal" onclick="closeModalCastOn()">x</span>
+        <div class="modal-heading">
+            <h3>Calculate stitches to cast-on</h3><span class="close-modal" onclick="closeModalCastOn()"> X</span>
         </div>
         <div>
           <p>
@@ -197,9 +208,9 @@
       </section>
 
       <section id="modal-yarn" class="modal black-bkgr">
-        <div>
-          <h3>Calculate the amount of yarn needed</h3>
-          <span class="close-modal" onclick="closeModalYarn()">x</span>
+        <div class="modal-heading">
+            <h3>Calculate skeins needed</h3><span class="close-modal" onclick="closeModalYarn()"> X</span>
+        </div>
           <p>
             To calculate how much yarn you'll need for a knitting project,
             you'll need to consider several factors, including the type of yarn,
@@ -210,11 +221,9 @@
       </section>
 
       <section id="modal-increase-decrease" class="modal black-bkgr">
-        <div>
-          <h3>Calculate increases and decreases</h3>
-          <span class="close-modal" onclick="closeModalIncreseDecrease()"
-            >x</span
-          >
+        <div class="modal-heading">
+            <h3>Calculate increases and decreases</h3><span class="close-modal" onclick="closeModalIncreseDecrease()"> X</span>
+        </div>
           <p>
             Keep in mind that the type of increase or decrease you use (e.g.,
             knit/purl increases, knit2tog, SSK for decreases) and the specific
