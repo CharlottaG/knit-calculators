@@ -54,7 +54,7 @@ To facilitate user decision-making, all calculations are displayed right from th
 
 ### Color palette
 
-**Buttons and modal windows**
+**Buttons and modal windows**  employ a contrasting combination of orange backgrounds with black text, ensuring clear visibility and distinction.
 ![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/a254c9ab-b84d-4a53-a135-2cd86d85acb7)
 
 [Contrast checker](https://webaim.org/resources/contrastchecker/?fcolor=000000&bcolor=FFA500)
@@ -62,6 +62,18 @@ To facilitate user decision-making, all calculations are displayed right from th
 ### Typography
 The Patrick Hand font was chosen for the logo to evoke a creative and crafty aesthetic.
 For the body copy, a sans-serif font, Raleway, has been selected to maintain a tranquil and serene atmosphere.
+
+## Functionality
+
+The site incorporates (at this point) four calculations to assist knitters in various aspects of their projects:
+
+1.  **Stitches and Rows per Centimeter**: This calculation determines, based on the user's swatch, how many stitches and rows their knitting gauge is per centimeter, providing a tool for recalculating to match projects with a different gauge.
+    
+2.  **Stitches to Cast-On and Rows to Knit**: This feature guides the yser in deciding how many stitches to cast on and the number of rows to knit to achieve a project's dimensions accurately.
+    
+3.  **Skeins Needed**: For efficient yarn management, this calculation helps you estimate the number of skeins or balls of yarn required to complete a specific knitting project.
+    
+4.  **Evenly Increasing or Decreasing**: This tool is valuable for evenly distributing increases or decreases in your knitting, ensuring a polished final result with balanced shaping.
 
 
 
