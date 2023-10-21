@@ -215,7 +215,7 @@ footer {
     margin: 5px;
 }
 
-/* For screens larger than 1000px */
+/* For screens 1000px and larger*/
 @media only screen and (min-width:1000px) {
 
     main {
@@ -229,7 +229,7 @@ footer {
     }
 }
 
-/* For screens larger than 1366px */
+/* For screens 1366px and larger*/
 @media only screen and (min-width:1366px) {
 
     main {
