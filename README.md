@@ -75,6 +75,14 @@ The site incorporates (at this point) four calculations to assist knitters in va
     
 4.  **Evenly Increasing or Decreasing**: This tool is valuable for evenly distributing increases or decreases in your knitting, ensuring a polished final result with balanced shaping.
 
+## Future development
+Building on the user stories, there are additional calculations that can be incorporated to further enhance this website's as the ultimate resource for knitting calculations. These potential additions include:
+
+1.  **Imperial conversion** - Conversions from the metric system to the imperial system (e.g., converting centimeters to inches).
+2.  **Yarn substitution (same gauge)** - offering a tool to match yarns with the same gauge.
+3.  **Yarn substitution (different weight)** - calculating the consequences of selecting a different type of yarn with varying weight.
+4.  **Size conversion** - simplifying the process of adjusting a project's size to align with user-specific requirements.
+
 
 
 
