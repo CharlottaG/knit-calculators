@@ -126,6 +126,17 @@ Building on the user stories, there are additional calculations that can be inco
 - [Google Fonts](https://fonts.google.com/): to find the fonts used on the page and to get the code to embed on the page.
 
 
+## Accessibility
+
+To ensure optimal accessibility for all users, regardless of their internet connection speed or potential disabilities, the following enhancements have been thoughtfully integrated into the web page's code and design:
+
+**Structural Elements**: The utilization of semantic HTML elements, such as *header*, *main*, *footer*, and *section*, has been incorporated to effectively organize content and elevate the overall accessibility of the page.
+
+**User-Friendly Buttons**: The size and text of buttons have been carefully designed to ensure ease of use, especially for individuals with touch screens and smaller devices.
+
+**Enhanced Input Fields**: Labels have been employed to facilitate screen reading and making it easier for an assistive technology user to understand what data should be entered, making the site fully accessible to users with visual impairments. Additionally, the input field sizes have been enlarged to accommodate users with smaller screens.
+
+**Optimized Images**: To boost site performance, the background image have been converted to the WebP format. This format offers superior compression without compromising image quality, resulting in a faster and more efficient user experience.
 
 
 
