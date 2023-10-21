@@ -63,13 +63,8 @@ btnCalcCastOn.addEventListener('click', () => {
     var numberOfStitchesPerCm = document.getElementById('user-stitches-per-cm').textContent;
     var numberOfRowsPerCm = document.getElementById('user-rows-per-cm').textContent;
 
-    if (parseInt(numberOfStitchesPerCm) === 0 && parseInt(numberOfRowsPerCm) === 0) {
-        alert('Oops! You need to complete previous calculation first. We need that result in this calculation.');
-    } else {
-        calcStitchesToCastOn(desiredWidth, numberOfStitchesPerCm);
-        calcRowsToKnit(desiredLength, numberOfRowsPerCm);
-    }
-
+    calcStitchesToCastOn(desiredWidth, numberOfStitchesPerCm);
+    calcRowsToKnit(desiredLength, numberOfRowsPerCm);
 }
 );
 
@@ -93,11 +88,7 @@ btnCalcYarn.addEventListener('click', () => {
     var totalYarnPerMeter = divide(totalYarn, 100);
     var numberOfSkeins = divide(totalYarnPerMeter, skeinLength);
 
-    if (parseInt(stitchesToCastOn) === 0 && parseInt(rowsToKnit) === 0) {
-        alert('Oops! You need to complete previous calculation first. We need that result in this calculation.');
-    } else {
-        document.getElementById('number-of-skeins').innerHTML = numberOfSkeins.toFixed(1);
-    }
+    document.getElementById('number-of-skeins').innerHTML = numberOfSkeins.toFixed(1);      
 }
 );
 

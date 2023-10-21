@@ -34,7 +34,7 @@ h2 {
 
 h3, h4 {
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 h5 {
@@ -43,6 +43,10 @@ h5 {
     color: orange;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+}
+
+.modal-heading h5 {
+    color: white;
 }
 
 label {
