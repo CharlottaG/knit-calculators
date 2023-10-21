@@ -1,39 +1,48 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Knit Calculators
+Welcome to the Knit Calculator website, the go-to resource for all things knitting. Irrespective you're a novice or an experienced crafter, the purpose of this site is to make the knitting experience as smooth and enjoyable as possible. Whether it is about keeping track of stitches and rows, estimating yarn requirements, or tackling gauge conversions. Happy knitting!
 
-Welcome,
+![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/ef42373e-3c8a-409e-90b2-5dbea313cf71)
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Table of contents
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+-   Purpose and target audience
+    -  User stories
+-   Design
+    -   Color palette
+    -  	Typography
+    -   Wireframes
+    -   Imagery
+    -   Icons
+-   Functionality
+-   Future development
+-   Bug fixes
+-   Technologies
+    -   HTML, CSS and Javascript
+-   Accessibility
+-   Deployment
+    -   Testing
+    -   Validation
+-   Credits
+    -   Acknowledgement
+    -   Code used
+    -   Media
+ 
+## Purpose and target audience
+The purpose of the site is to facilitate all calculations related to knitting and gather them in one place.
+The target audience is obviously knitters, no matter the experience level, you need to do calculations.
 
-## Codeanywhere Reminders
+### User stories
+**As a beginner knitter**, I want a knit calculator to help me count stitches and rows, so I can keep track of my progress and create accurate, well-proportioned projects.
+    
+**As an experienced knitter**, I need a yarn estimation feature in the knit calculator to determine the exact amount of yarn required for my project, considering different variables such as gauge and stitch pattern.
+    
+**As a pattern enthusiast**, I would like the knit calculator to provide a gauge conversion tool to adapt patterns with different gauge measurements, making it easier to follow patterns that don't match my yarn or needle size.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
-
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+ **As a beginning or intermediate knitter**, I want the knit calculator to guide me on how many stitches to cast on and how to increase or decrease evenly.
+ 
+#### User stories for future development
+  **As a creative knitter**, I want the calculator to assist me in scaling patterns up or down, ensuring that I can adjust projects to my desired size and achieve a perfect fit.
+    
+  **As a budget-conscious crafter**, I require the yarn substitution feature in the knit calculator to help me select alternative yarns while ensuring that the new yarn's characteristics match the original pattern's requirements.
+    
+  **As a frequent pattern user**, I need a yarn weight conversion tool to easily switch between different yarn weight classifications, making it simpler to use patterns from various sources.
