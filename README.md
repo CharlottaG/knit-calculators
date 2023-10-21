@@ -54,6 +54,9 @@ To facilitate user decision-making, all calculations are displayed right from th
 
 ### Color palette
 
+![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/9a3406d9-699b-464b-9c0d-7713df1859dc)
+
+
 **Buttons and modal windows**  employ a contrasting combination of orange backgrounds with black text, ensuring clear visibility and distinction.
 ![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/a254c9ab-b84d-4a53-a135-2cd86d85acb7)
 
@@ -103,6 +106,24 @@ Building on the user stories, there are additional calculations that can be inco
 
 **The results showed all decimals, where only one is needed**: This was solved by using the *toFixed(1)* at the end of the calculation.
 ![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/c5556111-a7ed-4376-a3be-b9e0de752821)
+
+
+## Technologies
+
+**HTML, CSS and Javascript**
+
+- GitHub for storing repository
+- Codeanywhere for code editing
+
+**Imagery**
+
+- Photoshop to resize and convert image to webP files.
+
+**Content**
+
+- [Font Awesome](https://fontawesome.com/start): to generate icons used on the page.
+- [Favicon generator](https://favicon.io/): to generate the fav icon on the tab next to the title.
+- [Google Fonts](https://fonts.google.com/): to find the fonts used on the page and to get the code to embed on the page.
 
 
 
