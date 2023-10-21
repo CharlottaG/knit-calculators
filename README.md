@@ -138,6 +138,8 @@ To ensure optimal accessibility for all users, regardless of their internet conn
 
 **Optimized Images**: To boost site performance, the background image have been converted to the WebP format. This format offers superior compression without compromising image quality, resulting in a faster and more efficient user experience.
 
+**Aria labels**: To enhance web accessibility aria labels have been used on social media links to provide additional information, context, and clarity to screen reader users. 
+
 ## Deployment
 
 The Knit Calculators site was deployed to [GitHub](https://github.com) pages, following these steps:
@@ -149,6 +151,20 @@ The Knit Calculators site was deployed to [GitHub](https://github.com) pages, fo
 5. Under *Branch* use the dropdown menu to select **main** and set the *folder* to **root**.
 
 The live site can be viewed at: [https://charlottag.github.io/knit-calculators](https://charlottag.github.io/knit-calculators)
+
+## Testing
+
+### Validation
+
+**HTML**
+
+**CSS**
+![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/f8948a2a-f8f8-4bc4-8fb3-83630004e498)
+
+## Credits
+
+### Resources
+**Get one decimal** : https://linuxhint.com/round-to-1-decimal-place-in-javascript/
 
 
 
