@@ -163,13 +163,14 @@ The live site can be viewed at: [https://charlottag.github.io/knit-calculators](
 ### Validation
 
 **HTML**
+![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/ecea1d9c-3d0b-4dbb-a480-aad4cc78334e)
 
 **CSS**
 ![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/0a5c531f-242f-4645-9c22-087edb4b3230)
 
 **Javascript**
-![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/d243d8f4-0606-4354-8005-2f975d00c342)
-
+*Note!* The unused varialbles, are used in the html to close the modal windows.
+![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/d296f24b-7923-4c17-bb42-c83e4d478973)
 
 
 ## Credits
