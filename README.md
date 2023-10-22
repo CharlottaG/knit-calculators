@@ -180,7 +180,16 @@ I would like to extend my sincere appreciation to *Luke Buchanan, my mentor at C
 
 
 ### Resources
-**Get one decimal** : https://linuxhint.com/round-to-1-decimal-place-in-javascript/
+**Get one decimal** : [https://linuxhint.com/round-to-1-decimal-place-in-javascript/](https://linuxhint.com/round-to-1-decimal-place-in-javascript/)
+**Create modals** : [https://www.w3schools.com/howto/howto_css_modals.asp](https://www.w3schools.com/howto/howto_css_modals.asp)
+**Switch function** : [https://www.w3schools.com/js/js_switch.asp](https://www.w3schools.com/js/js_switch.asp]
+**Validate empty input field** : [https://www.w3schools.com/howto/howto_js_validation_empty_input.asp](https://www.w3schools.com/howto/howto_js_validation_empty_input.asp)
+**String to number** : [https://www.w3schools.com/jsref/jsref_parseint.asp](https://www.w3schools.com/jsref/jsref_parseint.asp)
+
+
+
+
+
 
 ### Content
 The web site copy is my own, but I used *Google* to find information and *OpenAi* to help out with phrasings to make the copy more vivid and exiting.
