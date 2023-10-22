@@ -117,6 +117,8 @@ Building on the user stories, there are additional calculations that can be inco
 **The results showed all decimals, where only one is needed**: This was solved by using the *toFixed(1)* at the end of the calculation.
 ![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/c5556111-a7ed-4376-a3be-b9e0de752821)
 
+**Event handler dependent on device**: The way the modals was set-up with a span element to close the window was not device independent and could not be reached using tab key, so this was changed to buttons instead to allow for tab key to be used.
+
 
 ## Technologies
 **Wireframes**
@@ -162,6 +164,18 @@ The Knit Calculators site was deployed to [GitHub](https://github.com) pages, fo
 The live site can be viewed at: [https://charlottag.github.io/knit-calculators](https://charlottag.github.io/knit-calculators)
 
 ## Testing
+Testing was performed on:
+**Devices**
+- Laptop
+- Iphone13
+- Ipad10
+
+**Browsers**
+- Chrome
+- Edge
+- Firefox
+- Safari
+- 
 | Feature        | Expected Outcome | Chrome | Edge | Firefox | Safari |
 ---------------  | ---------------- | ------ | ---- | ------- | ------ |
 | **Learn more buttons (tips)** |   
@@ -205,13 +219,13 @@ The live site can be viewed at: [https://charlottag.github.io/knit-calculators](
 [Link](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fcharlottag.github.io%2Fknit-calculators%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
 
 ![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/eef5a3d0-48d8-45d1-a937-662dc3cca444)
-[Link]([https://wave.webaim.org/report#/https://charlottag.github.io/knit-calculators/](https://wave.webaim.org/report#/https://charlottag.github.io/knit-calculators/))
+
+[Link](https://wave.webaim.org/report#/https://charlottag.github.io/knit-calculators/)
 
 ## Credits
 
 ### Acknowledgements
 I would like to extend my sincere appreciation to *Luke Buchanan, my mentor at Code Institute* , for his support and invaluable guidance and constructive feedback throughout the development of this project. 
-
 
 ### Resources
 **Get one decimal** : [https://linuxhint.com/round-to-1-decimal-place-in-javascript/](https://linuxhint.com/round-to-1-decimal-place-in-javascript/)
@@ -219,11 +233,6 @@ I would like to extend my sincere appreciation to *Luke Buchanan, my mentor at C
 **Switch function** : [https://www.w3schools.com/js/js_switch.asp](https://www.w3schools.com/js/js_switch.asp]
 **Validate empty input field** : [https://www.w3schools.com/howto/howto_js_validation_empty_input.asp](https://www.w3schools.com/howto/howto_js_validation_empty_input.asp)
 **String to number** : [https://www.w3schools.com/jsref/jsref_parseint.asp](https://www.w3schools.com/jsref/jsref_parseint.asp)
-
-
-
-
-
 
 ### Content
 The web site copy is my own, but I used *Google* to find information and *OpenAi* to help out with phrasings to make the copy more vivid and exiting.
