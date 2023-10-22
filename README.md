@@ -9,6 +9,7 @@ Welcome to the Knit Calculator website, the go-to resource for all things knitti
 -   Purpose and target audience
     -  User stories
 -   Design and usability
+    -   Wireframes
     -  Color palette
     -  Typography
 -   Functionality
@@ -52,6 +53,9 @@ The website has been thoughtfully designed with a mobile-first approach, recogni
 The color palette has been carefully chosen to offer excellent contrast, enabling users to focus on the most essential elements. Additionally, a black opacity background has been applied to frame different calculations, providing added clarity to distinguish information related to each specific calculation.
 
 To facilitate user decision-making, all calculations are displayed right from the start, allowing users to quickly determine if the site offers the calculations they require. To streamline the user experience and reduce the number of inputs, the calculations intelligently retrieve answers from previous calculations, eliminating the need for users to repetitively enter information they've already provided.
+
+### Wireframes
+![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/2d61d6dd-8f0b-44ca-b148-061d4b76cf29)
 
 ### Color palette
 
