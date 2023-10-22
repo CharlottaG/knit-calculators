@@ -229,9 +229,13 @@ I would like to extend my sincere appreciation to *Luke Buchanan, my mentor at C
 
 ### Resources
 **Get one decimal** : [https://linuxhint.com/round-to-1-decimal-place-in-javascript/](https://linuxhint.com/round-to-1-decimal-place-in-javascript/)
+
 **Create modals** : [https://www.w3schools.com/howto/howto_css_modals.asp](https://www.w3schools.com/howto/howto_css_modals.asp)
-**Switch function** : [https://www.w3schools.com/js/js_switch.asp](https://www.w3schools.com/js/js_switch.asp]
+
+**Switch function** : [https://www.w3schools.com/js/js_switch.asp](https://www.w3schools.com/js/js_switch.asp)
+
 **Validate empty input field** : [https://www.w3schools.com/howto/howto_js_validation_empty_input.asp](https://www.w3schools.com/howto/howto_js_validation_empty_input.asp)
+
 **String to number** : [https://www.w3schools.com/jsref/jsref_parseint.asp](https://www.w3schools.com/jsref/jsref_parseint.asp)
 
 ### Content
@@ -239,10 +243,13 @@ The web site copy is my own, but I used *Google* to find information and *OpenAi
 
 ### Media
 [Vector Stock](https://www.vectorstock.com/royalty-free-vector/yarn-ball-icon-vector-17150800) was used to find a fav-icon for the tab.
+
 [Favicon](https://favicon.io/) was used to generate the different files supported by different browsers.
+
 [Unsplash](https://unsplash.com/photos/three-yarns-on-table-G-AQWUTgMZo) was used to find the background image, and Photoshop was used to convert it to webp files. Credit: Tara Evans.
+
 [Colormind](https://webaim.org/resources/contrastchecker/) was used to check for constrasting colors.
 
-
+[EOF]
 
 
