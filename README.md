@@ -1,7 +1,8 @@
 # Knit Calculators
 Welcome to the Knit Calculator website, the go-to resource for all things knitting. Irrespective you're a novice or an experienced crafter, the purpose of this site is to make the knitting experience as smooth and enjoyable as possible. Whether it is about keeping track of stitches and rows, estimating yarn requirements, or tackling gauge conversions. Happy knitting!
 
-![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/ef42373e-3c8a-409e-90b2-5dbea313cf71)
+![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/2cae4c76-be7c-4dff-ac44-8e5a15439d1e)
+
 
 ## Table of contents
 
@@ -85,12 +86,17 @@ Fav icon used for the tab image comes from [Vector Stock](https://www.vectorstoc
 The site incorporates (at this point) four calculations to assist knitters in various aspects of their projects:
 
 1.  **Stitches and Rows per Centimeter**: This calculation determines, based on the user's swatch, how many stitches and rows their knitting gauge is per centimeter, providing a tool for recalculating to match projects with a different gauge.
+   ![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/c687a5c8-def5-4d0a-b87e-8762ed181082)
+
     
-2.  **Stitches to Cast-On and Rows to Knit**: This feature guides the yser in deciding how many stitches to cast on and the number of rows to knit to achieve a project's dimensions accurately.
-    
-3.  **Skeins Needed**: For efficient yarn management, this calculation helps you estimate the number of skeins or balls of yarn required to complete a specific knitting project.
-    
-4.  **Evenly Increasing or Decreasing**: This tool is valuable for evenly distributing increases or decreases in your knitting, ensuring a polished final result with balanced shaping.
+3.  **Stitches to Cast-On and Rows to Knit**: This feature guides the yser in deciding how many stitches to cast on and the number of rows to knit to achieve a project's dimensions accurately.
+    ![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/83c8bc25-3088-4383-b6cd-31be21c27fbc)
+
+4.  **Skeins Needed**: For efficient yarn management, this calculation helps you estimate the number of skeins or balls of yarn required to complete a specific knitting project.
+    ![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/4e989ec6-a479-475b-b626-86dddece23c6)
+
+5.  **Evenly Increasing or Decreasing**: This tool is valuable for evenly distributing increases or decreases in your knitting, ensuring a polished final result with balanced shaping.
+    ![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/7f7fbd2f-684d-4e13-b8ae-33fb77569348)
 
 ## Future development
 Building on the user stories, there are additional calculations that can be incorporated to further enhance this website's as the ultimate resource for knitting calculations. These potential additions include:
@@ -159,12 +165,30 @@ The live site can be viewed at: [https://charlottag.github.io/knit-calculators](
 **HTML**
 
 **CSS**
-![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/f8948a2a-f8f8-4bc4-8fb3-83630004e498)
+![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/0a5c531f-242f-4645-9c22-087edb4b3230)
+
+**Javascript**
+![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/d243d8f4-0606-4354-8005-2f975d00c342)
+
+
 
 ## Credits
 
+### Acknowledgements
+I would like to extend my sincere appreciation to *Luke Buchanan, my mentor at Code Institute* , for his support and invaluable guidance and constructive feedback throughout the development of this project. 
+
+
 ### Resources
 **Get one decimal** : https://linuxhint.com/round-to-1-decimal-place-in-javascript/
+
+### Content
+The web site copy is my own, but I used *Google* to find information and *OpenAi* to help out with phrasings to make the copy more vivid and exiting.
+
+### Media
+[Vector Stock](https://www.vectorstock.com/royalty-free-vector/yarn-ball-icon-vector-17150800) was used to find a fav-icon for the tab.
+[Favicon](https://favicon.io/) was used to generate the different files supported by different browsers.
+[Unsplash](https://unsplash.com/photos/three-yarns-on-table-G-AQWUTgMZo) was used to find the background image, and Photoshop was used to convert it to webp files. Credit: Tara Evans.
+[Colormind](https://webaim.org/resources/contrastchecker/) was used to check for constrasting colors.
 
 
 
