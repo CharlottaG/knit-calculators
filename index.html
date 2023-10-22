@@ -35,19 +35,21 @@
           <h2>Welcome to our knitting calculators</h2>
           <p>
             Whether you're a seasoned knitting pro or just picking up your first
-            set of needles, we've got you covered. Our knitting calculator is
-            the perfect tool to help you create beautiful, custom-made knitted
+            set of needles, we've got you covered. Our knitting calculators are the perfect tool to help you create beautiful, custom-made knitted
             creations with ease and precision.
           </p>
-          <div id="button-heading">
-            <h3>What do you want to learn more about?</h3>
-          </div>
+        </div>
+        <div>
+            <p><em>Fill in the fields below to calculate your knitting projects, the calculations are based on the information from the previous calculations, so you need to fill in all fields. Happy knitting!</em></p>
+        </div>
+        <div id="button-heading">
+            <h3>Click the below buttons for some tips and information!</h3>
+        </div>
+        <div>
           <button class="modal-button" data-type="gauge">Gauge</button>
           <button class="modal-button" data-type="cast-on">Cast-on</button>
           <button class="modal-button" data-type="yarn">Yarn</button>
-          <button class="modal-button" data-type="increase-decrease">
-            Increases &amp; Decreases
-          </button>
+          <button class="modal-button" data-type="increase-decrease">Increases &amp; Decreases</button>
         </div>
       </section>
       <!-- User input section -->
@@ -75,24 +77,19 @@
         <div class="calc-section" id="cast-on-section">
           <h5>Stitches to cast&#8209;on</h5>
           <p>
-            <em>
-              You need to fill in the swatch fields above in order for the
-              calculation to work!</em
-            >
+            <em>You need to fill in the swatch fields above in order for the
+              calculation to work!</em>
           </p>
           <br />
-          <label for="desired-width">Enter desired width: </label
-          ><input type="number" id="desired-width" required />
+          <label for="desired-width">Enter desired width: </label><input type="number" id="desired-width" required />
           <br />
-          <label for="desired-length">Enter desired length: </label
-          ><input type="number" id="desired-length" required />
+          <label for="desired-length">Enter desired length: </label><input type="number" id="desired-length" required />
           <br />
           <button id="btn-calc-cast-on">
             Calculate!
           </button>
           <p>
-            Stitches to cast&#8209;on:
-            <span id="stitches-to-cast-on" class="result"> 0 </span>
+            Stitches to cast&#8209;on:<span id="stitches-to-cast-on" class="result"> 0 </span>
           </p>
           <p>Rows to knit: <span id="rows-to-knit" class="result"> 0 </span></p>
         </div>
@@ -106,15 +103,11 @@
             </em>
           </p>
           <br />
-          <label for="skein-length"
-            >Enter the length/skein (m) of the chosen yarn: </label
-          ><input type="number" id="skein-length" required />
+          <label for="skein-length">Enter the length/skein (m) of the chosen yarn: </label><input type="number" id="skein-length" required />
           <br />
           <button id="btn-calc-yarn">Calculate!</button>
           <p>
-            You need
-            <span id="number-of-skeins" class="result"> 0 </span> number of
-            skeins of selected yarn type.
+            You need<span id="number-of-skeins" class="result"> 0 </span> number of skeins of selected yarn type.
           </p>
           <div class="explanation">
             <p>
@@ -127,22 +120,13 @@
         <!-- Increase/Decrease-->
         <div class="calc-section" id="increase-decrease-section">
           <h5>Evenly increase or decrease</h5>
-          <label for="current-stitch-count"
-            >Your current number of stitches: </label
-          ><input type="number" id="current-stitch-count" required />
+          <label for="current-stitch-count">Your current number of stitches: </label><input type="number" id="current-stitch-count" required />
           <br />
-          <label for="stitches-to-increase-decrease"
-            >Number of stitches to increase/decrease: </label
-          ><input type="number" id="stitches-to-increase-decrease" required />
+          <label for="stitches-to-increase-decrease">Number of stitches to increase/decrease: </label><input type="number" id="stitches-to-increase-decrease" required />
           <br />
           <button id="btn-calc-increase-decrease">Calculate!</button>
           <p>
-            Increase/decrease every<span
-              id="evenly-increase-decrease"
-              class="result"
-            >
-              0
-            </span>
+            Increase/decrease every<span id="evenly-increase-decrease" class="result"> 0</span>
             stitches.
           </p>
           <div class="explanation">
@@ -260,7 +244,7 @@
             like lace shawls.</p>
         <p><strong>DK (Double Knitting) Weight Yarn:</strong> Versatile, suitable for sweaters
             and baby clothes.</p>
-            <p><strong> Worsted Weight Yarn: Medium-weight, great for sweaters and scarves.</p>
+            <p><strong> Worsted Weight Yarn:</strong> Medium-weight, great for sweaters and scarves.</p>
         <p><strong>Bulky Weight Yarn:</strong> Thicker, perfect for quick-knit projects.</p>
         <p><strong>Super Bulky Weight Yarn:</strong> Heaviest, for ultra-warm and cozy items.</p>
       </section>

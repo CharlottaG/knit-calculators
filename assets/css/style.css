@@ -24,7 +24,7 @@ body {
 h1 {
     font-family: 'Patrick Hand', cursive;
     font-size: 2.2rem;
-    color: white;
+    color: black;
 }
 
 h2 {
@@ -45,23 +45,10 @@ h5 {
     letter-spacing: 0.1rem;
 }
 
-.modal-heading h5 {
-    color: white;
-}
-
 h6 {
     font-size: 1.2rem;
         margin: 10px 0px;
 }
-
-label {
-    font-weight: 600;
-}
-
-input {
-    margin-bottom: 15px;
-}
-
 
 /* Header */
 header {
@@ -189,6 +176,17 @@ em {
     align-items: baseline;
 }
 
+.modal-heading h5 {
+    color: white;
+}
+
+label {
+    font-weight: 600;
+}
+
+input {
+    margin-bottom: 15px;
+}
 
 /* Footer */
 footer {
