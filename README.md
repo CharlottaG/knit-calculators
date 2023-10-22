@@ -119,18 +119,17 @@ Building on the user stories, there are additional calculations that can be inco
 
 
 ## Technologies
+**Wireframes**
+- UXPin
 
 **HTML, CSS and Javascript**
-
 - GitHub for storing repository
 - Codeanywhere for code editing
 
 **Imagery**
-
 - Photoshop to resize and convert image to webP files.
 
 **Content**
-
 - [Font Awesome](https://fontawesome.com/start): to generate icons used on the page.
 - [Favicon generator](https://favicon.io/): to generate the fav icon on the tab next to the title.
 - [Google Fonts](https://fonts.google.com/): to find the fonts used on the page and to get the code to embed on the page.
@@ -163,6 +162,31 @@ The Knit Calculators site was deployed to [GitHub](https://github.com) pages, fo
 The live site can be viewed at: [https://charlottag.github.io/knit-calculators](https://charlottag.github.io/knit-calculators)
 
 ## Testing
+| Feature        | Expected Outcome | Chrome | Edge | Firefox | Safari |
+---------------  | ---------------- | ------ | ---- | ------- | ------ |
+| **Learn more buttons (tips)** |   
+| Gauge	| Open modal for gauge | Pass | Pass | Pass | Pass|
+| Cast-on	|  Open modal for cast-on| Pass | Pass | Pass | Pass|
+| Yarn | Open modal for yarn| Pass | Pass | Pass | Pass|
+| Increases/Decreases |  Open modal for increases/decreases| Pass | Pass | Pass | Pass|
+| **x inside opened modal** |   
+| Gauge	| Close modal for gauge | Pass | Pass | Pass | Pass|
+| Cast-on	|  Close modal for cast-on| Pass | Pass | Pass | Pass|
+| Yarn | Close  modal for yarn| Pass | Pass | Pass | Pass|
+| Increases/Decreases |  Close modal for increases/decreases| Pass | Pass | Pass | Pass|
+| **Stitches/rows per cm calculation** |   
+| Button click | Return an alert if no input in input field, else calculate and return answers| Pass | Pass | Pass | Pass|
+| **Stitches/rows to cast-on calculation** |   
+| Button click | Return an alert if previous calculation in not performed else return alert if no input in input field, else calculate and return answers| Pass | Pass | Pass | Pass|
+| **# of skeins calculation** |   
+| Button click | Return an alert if previous calculation in not performed else return alert if no input in input field, else calculate and return answers| Pass | Pass | Pass | Pass|
+| **Increase/Decrease calculation** |   
+| Button click | Return an alert if no input in input field, else calculate and return answers| Pass | Pass | Pass | Pass|
+| **Footer links** |   
+| Instagram| Take the user to instagram.com in new window| Pass | Pass | Pass | Pass|
+| Ravelry | Take the user to ravelry.com in new window| Pass | Pass | Pass | Pass|
+| Pinterest | Take the user to pinterest.com in new window | Pass | Pass | Pass | Pass|
+| Email| Open users e-mail client in new window with pre-entered email address | Pass | Pass | Pass | Pass|
 
 ### Validation
 
