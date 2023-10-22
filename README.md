@@ -200,11 +200,12 @@ The live site can be viewed at: [https://charlottag.github.io/knit-calculators](
 *Note!* The unused varialbles, are used in the html to close the modal windows.
 ![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/d296f24b-7923-4c17-bb42-c83e4d478973)
 
-![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/f9774402-576f-482d-bade-a170eea97410)
+![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/cd2c7e5f-414e-4cda-863f-dd9430cd71cb)
+
 [Link](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fcharlottag.github.io%2Fknit-calculators%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
 
-![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/ac7e6fdd-29f5-424e-b96d-e2d3149af5cd)
-[Link](https://wave.webaim.org/report#/https://charlottag.github.io/knit-calculators/)
+![image](https://github.com/CharlottaG/knit-calculators/assets/138576943/eef5a3d0-48d8-45d1-a937-662dc3cca444)
+[Link]([https://wave.webaim.org/report#/https://charlottag.github.io/knit-calculators/](https://wave.webaim.org/report#/https://charlottag.github.io/knit-calculators/))
 
 ## Credits
 
